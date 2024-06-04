@@ -1,0 +1,126 @@
+digraph iia {
+	graph [
+		charset = "UTF-8";
+		style = filled;
+		fontname = "Arial";
+	];
+
+	node [
+		shape = box;
+		style = filled;
+		fillcolor = "#f0f0f0";
+		fontname = "Arial";
+	];
+
+	rankdir = LR;
+
+	subgraph cluster_promos {
+		label = "Promos";
+		penwidth = 0;
+		color = none;
+		node [shape = none];
+
+		"2021" -> "2022" -> "2023" -> "2024" -> "2025";
+	}
+    	subgraph cluster_legende {
+		label = "Légende";
+		fillcolor = none;
+
+		leg_parrain	[label = "Parrain"];
+		leg_fillot	[label = "Fillot"];
+		leg_fillotadop	[label = "Fillot Adoptif"];
+		leg_BDE		[label = <Membre BDE<BR/><I>Poste</I>> fillcolor="#f05050"];
+		leg_prez	[label = <Président de club<BR/><I>Club</I>> fillcolor="yellow"];
+		leg_listeux	[label = "Listeux\n\n(Couleur du tour\n = couleur de la liste)" penwidth=4 color="red"];
+
+		leg_parrain -> leg_fillot;
+		leg_parrain -> leg_fillotadop [style = "dashed"];
+	}
+	
+	subgraph cluster_2IA {
+		label = "2IA";
+		fillcolor = "#FCE0FF";
+
+		{ rank="same";
+			amina		[label = "\nAmina"];
+		}
+
+		{ rank="same";
+			antoinebouch	[label = "BOUCHÉ\nAntoine"];
+			antoinekhra	[label = "KHRATOS\nAntoine" penwidth=4 color="yellow"];
+			chloedeb	[label = <DEBERGH<BR/>Chloé<BR/><I>Polydance</I>> fillcolor="yellow"];
+			christelle	[label = "\nChristelle"];
+			joker		[label = <CORME<BR/>Baptiste<BR/><I>Respo Com</I>> fillcolor="#f05050" penwidth=4 color="deeppink"];
+			leachantar	[label = "CHANTARAUD\nLéa"];
+			maxencemor	[label = "MAUREL\nMaxence"];
+			valentingam	[label = "GAMAIN\nValentin" penwidth=4 color="white"];
+			yasminebahi	[label = "BAHI\nYasmine"];
+		}
+		amina -> christelle;
+
+
+		{ rank="same";
+			evapicrou	[label = <PICROUILLERE<BR/>Eva<BR/><I>Respo Partenariats/Goodies</I>> fillcolor="#f05050" penwidth=4 color="purple"];
+			
+			
+			kelliandup	[label = "DUPONT\nKellian"];
+			luciegria	[label = "GRIAUD\nLucie"];
+			nicolatseite	[label = "SEITÉ\nNicolas"];
+			elboulac	[label = "BOULAC\nElléa"];
+			salmabouyad	[label = "BOUYAD\nSalma"];
+			smitty		[label = <MISTERS<BR/>Alexandre<BR/><I>Respo International<BR/>L'Agri</I>> fillcolor="#f05050:yellow" penwidth=4 color="purple"];
+			sophielaver	[label = "LAVERSIN\nSophie"];
+			thibaultleste	[label = "LESTERLAN\nThibault"];
+
+			//portalSE	[label = " \nSE\n " shape="ellipse" penwidth=6 color="orange" fillcolor="#FFE0E0"];
+		}
+		amina -> evapicrou;
+		amina -> thibaultleste;
+		antoinebouch -> kelliandup;
+		antoinekhra -> luciegria;
+		antoinekhra -> smitty;
+		christelle -> luciegria;
+		christelle -> smitty;
+		leachantar -> nicolatseite;
+		leachantar -> elboulac;
+		valentingam -> sophielaver;
+		yasminebahi -> salmabouyad;
+
+		{ rank="same";
+			chloenico	[label = <NICOLE<BR/>Chloé<BR/><I>Respo International</I>> fillcolor="#f05050" penwidth=4 color="yellow"];
+			didieraud	[label = "DIDIER\nAudren" penwidth=4 color="orange"];
+			emilebct	[label = "BOUCHET \nEmile" penwidth=4 color="orange"];
+			agatleduc	[label = "LEDUC\nAgathe" penwidth=4 color="orange"];
+			romainorp	[label = <ORPEL<BR/>Romain<BR/><I>Inté/Events</I>> fillcolor="#f05050" penwidth=4 color="yellow"];
+		}
+		evapicrou -> chloenico;
+		evapicrou -> didieraud;
+		smitty -> chloenico;
+		smitty -> emilebct;
+		
+		{ rank="same";
+			arnaudauz  [label = "AUZOU\nArnaud"];
+			constancep [label = "PELLET\nConstance"];
+			agathechop [label = "CHOPIN\nAgathe"];
+			raphaelcle [label = <CLEMENT<BR/>Raphaël<BR/><I>Vice-Président</I>> fillcolor="#f05050" penwidth=4 color="pink"];
+			emmariot   [label = <RIOT<BR/>Emma<BR/><I>Respo Clubs</I>> fillcolor="#f05050" penwidth=4 color="pink"];
+			corentinec [label = "ECORCE\nCorentin"];
+			theoborel  [label = <BORRELY<BR/>Théo<BR/><I>Respo Inté/Events</I>> fillcolor="#f05050" penwidth=4 color="pink"]; 
+			gabrielbr  [label = "BREMARD\nGabriel"];
+		}
+		romainorp -> corentinec;
+		romainorp -> theoborel;
+		emilebct -> constance;
+		emilebct -> raphaelcle;
+		emilebct -> emmariot;
+		chloenico->arnaudauz;
+		didieraud -> gabrielbr;
+
+		//portalSE -> romainorp [style=dashed penwidth=2 color="#f05050"];
+	}
+
+	endnode [style=invis];
+
+	romainorp -> endnode [style=invis];
+	"2024" -> endnode [style=invis];
+}

@@ -1,0 +1,381 @@
+digraph gc {
+	graph [
+		charset = "UTF-8";
+		style = filled;
+		fontname = "Arial";
+	];
+
+	node [
+		shape = box;
+		style = filled;
+		fillcolor = "#f0f0f0";
+		fontname = "Arial";
+	];
+
+	rankdir = LR;
+
+	subgraph cluster_promos {
+		label = "Promos";
+		penwidth = 0;
+		color = none;
+		node [shape = none];
+
+		"2013" -> "2014" -> "2015" -> "2016" -> "2017" -> "2018" -> "2020" -> "2021" -> "2022" -> "2023" -> "2024" -> "2025";
+	}
+		subgraph cluster_legende {
+		label = "Légende";
+		fillcolor = none;
+
+		leg_parrain	[label = "Parrain"];
+		leg_fillot	[label = "Fillot"];
+		leg_fillotadop	[label = "Fillot Adoptif"];
+		leg_BDE		[label = <Membre BDE<BR/><I>Poste</I>> fillcolor="#f05050"];
+		leg_prez	[label = <Président de club<BR/><I>Club</I>> fillcolor="yellow"];
+		leg_listeux	[label = "Listeux\n\n(Couleur du tour\n = couleur de la liste)" penwidth=4 color="red"];
+
+		leg_parrain -> leg_fillot;
+		leg_parrain -> leg_fillotadop [style = "dashed"];
+	}
+	
+
+	subgraph cluster_GC {
+		label = "GC";
+		fillcolor = "#FFE0B0";
+
+		{ rank = "same";
+			camilledelle	[label = "DELLENBACH\nCamille"];
+			gauthierwern	[label = "WERNERT\nGauthier"];
+		}
+
+		{ rank = "same";
+			celineraynal	[label = "RAYNAL\nCéline"];
+			mariedelaun	[label = "DELAUNAY\nMarie"];
+			maximecoche	[label = "COCHET\nMaxime"];
+			pauljutard	[label = "JUTARD\nPaul"];
+		}
+		camilledelle -> mariedelaun;
+		gauthierwern -> celineraynal;
+		
+		{ rank="same";
+			// camilleberb	[label = "BERBINEAU\nCamille"];
+			// jeanarnaudesp	[label = "ESPINNASSOUZE\nJean Arnaud"];
+			// loannehuet	[label = "HUET\nLoanne"];
+			// nabildinar	[label = "DINARI\nNabil"];
+			maximesenic	[label = "SENICOURT\nMaxime"];
+			nicolasbes	[label = "BESNARD\nNicolas"];
+			philomenegai	[label = "GAILLARD\nPhilomène"];
+			// remidubois	[label = "DUBOIS\nRemi"];
+			// stevenbolz	[label = "BOLZER\nSteven"];
+			tristantoul	[label = "TOULON\nTristan"];
+			// yanaviss	[label = "AVISSE\nYan"];
+		}
+		celineraynal -> maximesenic;
+		maximecoche -> tristantoul;
+		pauljutard -> nicolasbes;
+
+		{ rank="same";
+			aurelialourd	[label = "LOURDEL\nAurelia"];
+			emmaverge	[label = "VERGER\nEmma"];
+			guillaumeper	[label = "PERUS\nGuillaume"];
+			jeremijame	[label = "JAMES\nJeremi"];
+			lucasbuis	[label = "BUISINE\nLucas"];
+			theomahi	[label = "MAHIET\nTheo"];
+		}
+		philomenegai -> aurelialourd;
+		philomenegai -> jeremijame;
+		maximesenic -> guillaumeper;
+		nicolasbes -> theomahi;
+		tristantoul -> lucasbuis;
+
+		{ rank="same";
+			antoinefran	[label = "FRANÇAIS\nAntoine"];
+			antoinegoud	[label = "GOUDINOUX\nAntoine"];
+			marionpalle	[label = "PALLESCHI\nMarion"];
+			remyheni	[label = "HENICHARD\nRemy"];
+		}
+		emmaverge -> antoinefran;
+		guillaumeper -> marionpalle;
+		lucasbuis -> antoinegoud;
+
+		{ rank="same";
+			corentingode	[label = "GODET\nCorentin"];
+			florianbaron	[label = "BARON\nFlorian"];
+			hugobard	[label = "BARDIN\nHugo"];
+			leapotvin	[label = "POTVIN\nLéa"];
+			thomasberthou	[label = "BERTHOU\nThomas"];
+		}
+		antoinefran -> leapotvin;
+		antoinefran -> hugobard;
+		antoinegoud -> corentingode;
+		remyheni -> florianbaron;
+
+		{ rank="same";
+			arthurvev	[label = "VÈVE\nArthur"];
+			maellechan	[label = "CHANHIH\nMaëlle"];
+			mariecaqui	[label = "CAQUINEAU\nMarie"];
+			thomaslege	[label = <LÉGER<BR/>Thomas<BR/><I>Inté/Events</I>> fillcolor="#f05050" penwidth=4 color="purple"];
+		}
+		florianbaron -> thomaslege;
+		leapotvin -> thomaslege;
+		thomasberthou -> arthurvev;
+		thomasberthou -> maellechan;
+
+		{ rank="same";
+			alexandremion	[label = "MIONNET\nAlexandre"];
+			anthonylewa	[label = "LEWANDOWSKI\nAnthony"];
+			bakhtar		[label = "\nBakhtar"];
+			benjaminplaq	[label = "PLAQUIN\nBenjamin"];
+			bettinabeno	[label = <BENOIST<BR/>Bettina<BR/><I>Respo Clubs</I>> fillcolor="#f05050" penwidth=4 color="blue"];
+			brendancec	[label = "CECIL\nBrendan"];
+			coletespeck	[label = <SPECKENS<BR/>Colette<BR/><I>Inté/Events</I>> fillcolor="#f05050" penwidth=4 color="blue"];
+			doriannlahs	[label = "LAHSINAT\nDoriann"];
+			florencebourn	[label = "BOURNONVILLE\nFlorence"];
+			gabrielrol	[label = "ROLET\nGabriel"];
+			klervicoch	[label = "COCHET\nKlervi"];
+			leolouche	[label = "LOUCHEZ\nLéo"];
+			marinroch	[label = "ROCHARD\nMarin"];
+			matthistho	[label = "THOMAS\nMatthis"];
+			maximefarde	[label = <FARDEAU<BR/>Maxime<BR/><I>La Radio</I>> fillcolor="yellow"];
+			nadaabouir	[label = <ABOUIR<BR/>Nada<BR/><I> </I>> fillcolor="#f05050" penwidth=4 color="blue"];
+			romanegad	[label = "GADEK\nRomane"];
+			romanegade	[label = "GADEK\nRomane"];
+		}
+		arthurvev -> marinroch;
+		maellechan -> marinroch;
+		mariecaqui -> brendancec;
+		thomaslege -> alexandremion;
+		thomaslege -> bakhtar;
+		thomaslege -> doriannlahs;
+		thomaslege -> nadaabouir [penwidth=2 color = "#f05050"];
+
+		{ rank="same";
+			alexisportrob	[label = "PORT-ROBACH\nAlexis"];
+			aminefeki	[label = <FEKI<BR/>Amine<BR/><I>Respo Clubs</I>> fillcolor="#f05050" penwidth=4 color="deeppink"];
+			arnaudmarech	[label = <MARÉCHAL<BR/>Arnaud<BR/><I>Inté/Events</I>> fillcolor="#f05050" penwidth=4 color="deeppink"];
+			arthurbarreto	[label = <BARRETO<BR/>Arthur<BR/><I>Le Studio</I>> fillcolor="yellow"];
+			leoniedec	[label = "DE CLERQ\nLéonie"];
+			louisamedeelo	[label = "LORTHIOIS\nLouis-Amédée"];
+			lucasdebock	[label = "DEBOCK\nLucas"];
+			mathieupell	[label = <PELLOUIN<BR/>Mathieu<BR/><I>Trésorier</I>> fillcolor="#f05050" penwidth=4 color="deeppink"];
+			nuriacar	[label = "ACAR\nNuri"];
+			simonmayen	[label = "MAYEN\nSimon" penwidth=4 color="white"];
+			simonteixe	[label = "TEIXEIRA\nSimon"];
+			sophiedelp	[label = "DELPLACE\nSophie"];
+			valentinaubou	[label = "AUBOUIN\nValentin"];
+			yannistouns	[label = <TOUNSI<BR/>Yannis<BR/><I>Secrétaire</I>> fillcolor="#f05050" penwidth=4 color="deeppink"];
+			wiame		[label = "\nWiame"];
+		}
+		alexandremion -> arthurbarreto;
+		anthonylewa -> leoniedec;
+		benjaminplaq -> louisamedeelo;
+		bettinabeno -> aminefeki [penwidth=2 color = "#f05050"];
+		bettinabeno -> sophiedelp;
+		brendancec -> valentinaubou;
+		coletespeck -> arnaudmarech [penwidth=2 color = "#f05050"];
+		florencebourn -> alexisportrob;
+		gabrielrol -> arnaudmarech;
+		klervicoch -> wiame;
+		leolouche -> lucasdebock;
+		marinroch -> mathieupell;
+		matthistho -> simonteixe;
+		maximefarde -> wiame;
+		nadaabouir -> nuriacar;
+		nadaabouir -> yannistouns [penwidth=2 color = "#f05050"];
+		romanegade -> leoniedec;
+
+		{ rank = "same";
+			axellelecler	[label = "LECLER\nAxelle"];
+			blanchechauss	[label = "CHAUSSET\nBlanche"];
+			clementcollan	[label = <COLLANGE<BR/>Clément<BR/><I> </I>> fillcolor="#f05050" penwidth=4 color="green"];
+			elisalemee	[label = <LEMÉE<BR/>Elisa<BR/><I>Le PaF!</I>> fillcolor="yellow" penwidth=4 color="green"];
+			elodiebory	[label = "BORY\nElodie"];
+			emmavandyck	[label = "VANDYCKE\nEmma" penwidth=4 color="green"];
+			illiassearib	[label = "ARIBA\nIlliasse"];
+			leadudkowi	[label = <DUDKOWIAK<BR/>Léa<BR/><I>BDS</I>> fillcolor="yellow"];
+			louismiglior	[label = <MIGLIORETTI<BR/>Louis<BR/><I>Respo Com</I>> fillcolor="#f05050" penwidth=4 color="purple"];
+			louisonnoez	[label = <NOEZ<BR/>Louison<BR/><I>La Fanfare</I>> fillcolor="yellow"];
+			louissoulard	[label = <SOULARD<BR/>Louis<BR/><I>EESTEC</I>> fillcolor="yellow" penwidth=4 color="green"];
+			luciecarette	[label = "CARETTE\nLucie"];
+			quentinmalauss	[label = "MALAUSSENA\nValentin"];
+			teophilezdel	[label = "ZDELAR\nThéophile"];
+			valentineleu	[label = "LELEU\nValentine"];
+		}
+		aminefeki -> louisonnoez;
+		arnaudmarech -> leadudkowi;
+		arnaudmarech -> louismiglior [penwidth=2 color = "#f05050"];
+		arthurbarreto -> clementcollan;
+		leoniedec -> elodiebory;
+		leoniedec -> luciecarette;
+		louisamedeelo -> axellelecler;
+		lucasdebock -> teophilezdel;
+		mathieupell -> quentinmalauss;
+		mathieupell -> valentineleu;
+		nuriacar -> blanchechauss;
+		nuriacar -> illiassearib;
+		simonmayen -> emmavandyck;
+		simonteixe -> louissoulard;
+		sophiedelp -> louisonnoez;
+		valentinaubou -> louismiglior;
+		wiame -> leadudkowi;
+		yannistouns -> elisalemee;
+
+		{ rank = "same";
+            adamvascon  [label = "VASCONCELOS\nAdam"];
+            adjouaayik  [label = "AYIKPE\nAdjoua"];
+			adrienschne	[label = "SCHNEIDER\nAdrien"];
+			antoinevass	[label = "VASSE\nAntoine"];
+			arseneblaz  [label = "BLAZERE\nArsene"];
+			arthurbonif	[label = <<table border="0">
+							<tr><td border="0">BONIFACE<BR/>Arthur</td></tr>
+							<tr><td border="4" color="deeppink"><I>Respo PeiP</I></td></tr>
+							<tr><td border="4" color="yellow"><I>Président</I></td></tr>
+						</table>> fillcolor="#f05050"];
+            bastienbert  [label = "BERTHET\nBastien"];
+			bilalchahti	 [label = "CHAHTI\nBilal"];
+			camillebusn  [label = "BUSNEL\nCamille"];
+			clementpit   [label = <PITAILLER<BR/>Clément<BR/><I>EESTEC</I>> fillcolor="yellow" penwidth=4 color="orange"];
+			clementdup   [label = "DUPONT\nClément"];
+			evabourge    [label = "BOURGE\nEva"];
+			evanrober    [label = "ROBERT\nEvan"];
+			ezragatt	 [label = "GATTOBIGIO\nEzra"];
+			guillaumeerm [label = "ERMISSE\nGuillaume" penwidth=4 color="orange"];
+			gwendaltre   [label = "TREBOUET\nGwendal"];
+			hugoclem     [label = "CLEMENT\nHugo"];
+			jeremybel    [label = "BELAVIA\nJérémy"];
+			josiaskou    [label = "KOUMAN\nJosias"];
+			julie		 [label = <DANDIN<BR/>Julie<BR/><I>Inté/Events</I>> fillcolor="#f05050" penwidth=4 color="yellow"];
+			lucasbordet	 [label = <BORDET<BR/>Lucas<BR/><I>Vice-Trésorier</I>> fillcolor="#f05050" penwidth=4 color="yellow"];
+			lucascohu    [label = "COHU\nLucas"];
+			//maelgc		 [label = "\nMaël"];
+			marieperren	 [label = <PERRENOUD<BR/>Marie<BR/><I>Respo Prev/DD</I>> fillcolor="#f05050" penwidth=4 color="yellow"];
+			mariongobe   [label = "GOBE\nMarion"];
+			martindelb	 [label = "DELBARRE\nMartin"];
+			mathieudeaub [label = "DEAUBONNE\nMathieu"];
+			mathiasterr  [label = "TERRIEN\nMathias"];
+			mathieudem   [label = "DEMUYNCK\nMathieu"];
+			matisdavid	 [label = "DAVID\nMatis"];
+			modoulo      [label = "LO\nModou"];
+			pierrehuar   [label = "HUARD\nPierre"];
+			romainaubr	 [label = "AUBRY\nRomain" penwidth=4 color="orange"];
+			valentincha  [label = "CHALAYE\nValentin"];
+			valentineven [label = "VANDOMME\nValentine"];
+			yacinesaguer [label = "SAGUER\nYacine"];
+			zinedineait  [label = "AIT GANA\nZinedine"];
+		}
+        emmavandyck -> ezragatt;
+		axellelecler -> matisdavid;
+		clementcollan -> clementpit;
+		clementcollan -> guillaumeerm;
+		elisalemee -> adrienschne;
+		elisalemee -> marieperren;
+		leadudkowi -> arthurbonif;
+		leadudkowi -> lucasbordet;
+		leadudkowi -> mathieudeaub;
+		//louismiglior -> maelgc;
+		louisonnoez -> bilalchahti;
+		louisonnoez -> romainaubr;
+		louissoulard -> antoinevass;
+		louissoulard -> lucasbordet;
+		luciecarette -> valentincha;
+		valentineleu -> martindelb;
+		{ rank = "same";
+            adamderno   [label = "DERNONCOURT\nAdam"];
+            amineaita   [label = "AIT AHMED\nAmine"];
+            antoinebul  [label = "BULTEL\nAntoine"];
+            antoineeck  [label = "ECK\nAntoine"];
+            arthurrena  [label = "DUPONT\nClément"];
+            baptisteeh  [label = "EHRART\nBaptiste"];
+            baptistevae [label = "VAESKEN\nBptiste"];
+            basmabouta  [label = "BOUTALLAKA\nBasma"];
+            corentinbet [label = "BETANCOURT\nCorentin"];
+            eliecrasna  [label = "CRASNAULT\nElie"];
+            eliotlegr   [label = "LEGRAND\nEliot"];
+            evadegran   [label = "DEGRAND\nEva"];
+            felixsign   [label = "SIGNARBIEUX\nFélix"];
+            gabrielgu   [label = "GUNSETT\nGabriel"];
+            hectorseg   [label = "SEGALEN\nHector"];
+            heloisetri  [label = "TRICOLI\nHéloïse"];
+            hugobernar  [label = "BERNARDO\nHugo"];
+            hugosantos  [label = "SANTOS DIONISIO\nHugo"];
+            inesrohau   [label = "ROHAUT\nInès"];
+            jadeducl    [label = "DUCLOS\nJade"];
+            jarodsk     [label = "SKALKO\nJarod"];
+            jeanlegou   [label = <LE GOUDIVEZE<BR/>Jean<BR/><I>Respo Inté/Events</I>> fillcolor="#f05050" penwidth=4 color="pink"];
+            jenniferel  [label = "ELONGUERT\nJennifer"];
+            juliedebl   [label = "DEBLOCK\nJulie"];
+            julienmar   [label = "MARCHAND\nJulien"];
+            leelouba    [label = "BAVILLE\nLee-Lou"];
+            lisafaro    [label = <FARO SOLE<BR/>Lisa<BR/><I>Respo Part/Goodies</I>> fillcolor="#f05050" penwidth=4 color="pink"];
+            margauxra   [label = "RAYEZ\nMargaux"];
+            martinolh   [label = "OLHAGARAY\nMartin"];
+            mateorom    [label = <ROMANO<BR/>Matéo<BR/><I>Respo Part/Goodies</I>> fillcolor="#f05050" penwidth=4 color="pink"];
+            mateopons   [label = "PONS-COURRIER Mathéo"];
+            mathieubla  [label = <BLANC<BR/>Mathieu<BR/><I>Secrétaire</I>> fillcolor="#f05050" penwidth=4 color="blue"];
+            maxchevojo  [label = "CHEVO JON\nMax"];
+            mohamadelh  [label = "EL HAJJ CHEHADE\nMohamad"];
+            pierreanto  [label = "PETT\nPierre-Antoine"];
+            raphaelma   [label = "MACEDO DE AMORIM\nRaphael"];
+            robertnken  [label = "NKEN\nRobert"];
+            solenegira  [label = "GIRAUD\nSolène"];
+            tanguydela  [label = "DELAUNOY\nTanguy"];
+            theomamel   [label = "MAMELIN\nThéo"];
+            titouanle   [label = <LE BORGNE<BR/>Titouan<BR/><I>Respo Inté/Events</I>> fillcolor="#f05050" penwidth=4 color="pink"];
+            tonyphaly   [label = "PHALYSANH\nTony"];
+            valentinede [label = "DE GROOTE\nValentine"];
+            yaniscasse  [label = "CASSEREAU\nYanis"];
+            yanndemass  [label = "DEMASSIET\nYann"];
+            testb   [label = "\n\n", style = invis];
+            testa   [label = "\n\n", style = invis];
+
+		}
+		arthurbonif -> testb [style = invis];
+		arthurbonif -> testa [style = invis];
+		adamvascon -> tanguydela;
+		adjouaayik->juliedebl;
+		adrienschne->jarodsk;
+		antoinevass->antoinebul;
+		arseneblaz->hectorseg;
+		arthurbonif->lisafaro;
+		bastienbert->tonyphaly;
+		camillebusn->leelouba;
+		clementdup->arthurrena;
+		clementpit->mathieubla;
+		evabourge->yaniscasse;
+		evanrober->antoineeck;
+		ezragatt->julienmar;
+		guillaumeerm->baptistevae;
+		guillaumeerm->titouanle;
+		gwendaltre->inesrohau;
+		mathieudem->inesrohau;
+		hugoclem -> hugobernar;
+		jeremybel->raphaelma;
+		josiaskou -> jenniferel;
+		josiaskou -> yanndemass;
+		julie -> mateorom;
+		lucasbordet -> hugosantos;
+        lucascohu -> adamderno;
+        marieperren -> maxchevojo;
+        mariongobe -> valentinede;
+        martindelb -> felixsign;
+        mathiasterr -> solenegira;
+        mathieudeaub -> eliecrasna;
+        mathieudem -> corentinbet;
+        modoulo -> amineaita;
+        pierrehuar -> jadeducl;
+        pierrehuar -> margauxra;
+        pierrehuar -> pierreanto;
+        romainaubr -> jeanlegou;
+        matisdavid ->jeanlegou;
+        valentincha -> martinolh;
+        valentineven -> theomamel;
+        valentineven -> gabrielgu;
+        yacinesaguer -> mateopons;
+        yacinesaguer -> evadegran;
+        zinedineait -> eliotlegr;
+	}
+
+	endnode [style=invis];
+
+	martindelb -> endnode [style=invis];
+	"2024" -> endnode [style=invis];
+}

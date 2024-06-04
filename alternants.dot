@@ -1,0 +1,286 @@
+digraph alternants {
+	graph [
+		charset = "UTF-8";
+		style = filled;
+		fontname = "Arial";
+	];
+
+	node [
+		shape = box;
+		style = filled;
+		fillcolor = "#f0f0f0";
+		fontname = "Arial";
+	];
+
+	rankdir = LR;
+
+	subgraph cluster_promos {
+		label = "Promos";
+		penwidth = 0;
+		color = none;
+		node [shape = none];
+
+		"2021" -> "2022" -> "2023" -> "2024"->"2025";
+	}
+
+	subgraph cluster_legende {
+		label = "Légende";
+		fillcolor = none;
+
+		leg_parrain	[label = "Parrain"];
+		leg_fillot	[label = "Fillot"];
+		leg_fillotadop	[label = "Fillot Adoptif"];
+		leg_BDE		[label = <Membre BDE<BR/><I>Poste</I>> fillcolor="#f05050"];
+		leg_prez	[label = <Président de club<BR/><I>Club</I>> fillcolor="yellow"];
+		leg_listeux	[label = "Listeux\n\n(Couleur du tour\n = couleur de la liste)" penwidth=4 color="red"];
+
+		leg_parrain -> leg_fillot;
+		leg_parrain -> leg_fillotadop [style = "dashed"];
+	}
+
+	subgraph cluster_2GU {
+		label = "2GU";
+		fillcolor = "#ada59c";
+		
+		{ rank="same";
+			alexandregall	[label = "GALLOIS\nAlexandre"];
+			alexandresant	[label = <SANTENS<BR/>Alexandre<BR/><I>PULCE</I>> fillcolor="yellow"];
+			elodievan	[label = "VANDERMALIÈRE\nÉlodie"];
+			emelinemonz	[label = "MONZIES\nEmeline"];
+			kawtarlem	[label = "LEMALLAOUI\nKawtar"];
+			koulsommouta	[label = "MOUTAHARA\nKoulsom"];
+			linebouw	[label = "BOUWENS\nLine"];
+			lolagaudu	[label = "GAUDUCHAU\nLola"];
+			lucastam	[label = "TAMIN\nLucas"];
+			oceanecarte	[label = "CARTERON\nOcéane"];
+			paulrive	[label = <RIVÉ<BR/>Paul<BR/><I>Respo Alternants/Com</I>> fillcolor="#f05050" penwidth=4 color="deeppink"];
+			thomasbrs	[label = "BRS\nThomas"];
+		}
+
+		{ rank="same";
+			fannybroc	[label = "BROCOT\nFanny"];
+			imanebounou	[label = "BOUNOU\nImane"];
+			ineslazre	[label = "LAZREQ\nInes"];
+			kenzabad	[label = "BADREDDINE\nKenza"];
+			leilalogi	[label = "LOGIÉ\nLeïla"];
+			opheliecoup	[label = "COUPÉ\nOphélie" penwidth=4 color="green"];
+			samuelbienv	[label = <BIENVENU<BR/>Samuel<BR/><I>Respo Alternants</I>> fillcolor="#f05050" penwidth=4 color="purple"]; 
+			youssraelmou	[label = "EL MOUSSAOUI\nYoussra"];
+		}
+		alexandregall -> ineslazre;
+		alexandresant -> opheliecoup;
+		elodievan -> opheliecoup;
+		emelinemonz -> imanebounou;
+		kawtarlem -> youssraelmou;
+		koulsommouta -> imanebounou;
+		linebouw -> fannybroc;
+		lolagaudu -> leilalogi;
+		lucastam -> leilalogi;
+		oceanecarte -> kenzabad;
+		paulrive -> samuelbienv [penwidth=2 color = "#f05050"];
+		thomasbrs -> leilalogi;
+
+		{ rank="same";
+			albinneu	[label = <<table border="0">
+							<tr><td border="0">NEUTS<BR/>Albin</td></tr>
+							<tr><td border="4" color="deeppink"><I>Respo PeiP</I></td></tr>
+							<tr><td border="4" color="yellow"><I>Respo Alternants</I></td></tr>
+						</table>> fillcolor="#f05050"];
+			charlottefor	[label = "FORMINI\nCharlotte"];
+			emilieguer	[label = "GUERIN\nEmilie" penwidth=4 color="orange"];
+			jeanyvescarr	[label = "CARRIÈRE\nJean Yves"];
+			lealachere	[label = "LACHERÉ\nLéa"];
+			lisarouss	[label = "ROUSSEL\nLisa"];
+			loicmariet	[label = "MARIETTE\nLoïc"];
+			louishetr	[label = "HETROY\nLouis"];
+			luciejougl	[label = "JOUGLET\nLucie"];
+			lukasalb	[label = "ALBERT\nLukas"];
+			nicolaslew	[label = <LEWILLE<BR/>Nicolas<BR/><I>Respo Alternants</I>> penwidth=4 fillcolor="#f05050" color="purple"];
+			paullebo	[label = "LE BOT\nPaul"];
+			titouancheva	[label = "CHEVALLERAU\nTitouan"];
+		}
+		fannybroc -> lisarouss;
+		fannybroc -> loicmariet;
+		imanebounou -> jeanyvescarr;
+		imanebounou -> paullebo;
+		ineslazre -> luciejougl;
+		kenzabad -> charlottefor;
+		kenzabad -> nicolaslew;
+		leilalogi -> lealachere;
+		leilalogi -> titouancheva;
+		opheliecoup -> emilieguer;
+		opheliecoup -> paullebo;
+		samuelbienv -> albinneu [penwidth=2 color = "#f05050"];
+		samuelbienv -> louishetr;
+		youssraelmou -> lukasalb;
+		{ rank = "same";
+			antoinesim [label = <SIMON<BR/>Antoine<BR/><I>Respo Communication</I>> fillcolor="#f05050" penwidth=4 color="pink"];
+			lilouflo   [label = "FLORENT\nLilou"];
+			louiskerv  [label = "KERVELLA\nLouis"];
+			julestrip  [label = "TRIPLET\nJules"];
+			gaiapaci   [label = "PACITTI\nGaïa"];
+			romainlop  [label = "LOPES GONCALVES\nRomain"];
+			maddyporc  [label = "PORCHER\nMaddy"];
+			elisaquen  [label = <QUENOUAULT<BR/>Elisa<BR/><I>Respo Alternants</I>> fillcolor="#f05050" penwidth=4 color="pink"];
+			etiennedel [label = "DELACHE\nEtienne"];
+			simonverr  [label = "VERRON\nSimon"];
+			arthurach  [label = "ACHARD\nArthur"];
+			gauthierpl [label = "PELLEGRIN\nGauthier"];
+			ameliegra  [label = "GRANDMOTTET\nAmélie"];
+			laurawan   [label = "WANG\nLaura"];
+			clementmar [label = "MARIOT\nClément"];
+			loucandyce [label = "FERRAND\nLou-Candyce"];
+			phillippela [label = "LARGUIER\nPhilippe"];
+			leobernae    [label = "BERNAERT\nLéo"];
+		}
+        albinneu -> antoinesim;
+        albinneu -> lilouflo;
+        louishetr -> louiskerv;
+        louishetr -> julestrip;
+        nicolaslew -> gaiapaci;
+        charlottefor -> romainlop;
+        emilieguer -> maddyporc;
+        emilieguer -> elisaquen;
+        paullebo -> etiennedel;
+        paullebo -> simonverr;
+        lisarouss -> arthurach;
+        loicmariet -> gauthierpl;
+        lealachere -> ameliegra;
+        lealachere -> laurawan;
+        titouancheva -> clementmar;
+        titouancheva -> loucandyce;
+        lukasalb -> phillippela;
+        lukasalb -> leobernae;
+	}
+
+	subgraph cluster_prod {
+		label = "Prod";
+		fillcolor = "#B2F2EC";
+
+		{ rank = "same";
+			maximegrapt	[label = "GRAPTON\nMaxime"];
+		}
+
+		{ rank = "same";
+			vianneypon	[label = "PONCET\nVianney"];
+			timothebr   [label = "BROUSSART\nTimothée"];
+		}
+		maximegrapt -> vianneypon;
+		maximegrapt -> elodievan;
+		
+		{ rank = "same";
+			lisaboue	[label = "BOUE\nLisa"];
+			maximeder   [label = "DERCOURT\nMaxime"];
+		}
+		vianneypon -> lisaboue;
+		timothebr->maximeder;
+
+		{ rank = "same";
+			antoinelepr	[label = "LEPRINCE\nAntoine" penwidth=4 color="orange"];
+			hugoleja	[label = "LEJAY\nHugo"];
+			thomasfris [label = "FRISSON\nThomas"];
+			audreycar   [label = "CARON\nAudrey"];
+			ldalby   [label=<DALBY<BR/>Lison<BR/><I>Respo Inté/Event</I>> fillcolor="#f05050" penwidth=4 color="yellow"];
+		}
+		maximeder ->thomasfris;
+		lisaboue -> antoinelepr;
+		lisaboue -> hugoleja;
+		{ rank = "same";
+			antoinele [label = "LEROY \nAntoine"];
+			melinadia [label = "DIAS FERRAZ\nMélina"];
+			thomasliess [label = "LIESS\nThomas"];
+			kylianbroha  [label = "BROHAN\nKylian"];
+			zelielacres  [label = "LACRESSONNIERE\nZélie"];
+			paulinefau [label = <FOUVILLE<BR/>Pauline<BR/><I>Respo Communication</I>> fillcolor="#f05050" penwidth=4 color="pink"];
+		}
+		audreycar -> zelielacres;
+        antoinelepr -> antoinele;
+        ldalby -> melinadia;
+        thomasfris -> thomasliess;
+        
+	}
+	subgraph cluster_GC2A {
+		label = "GC2A";
+		fillcolor = "#ff9f43";
+		{ rank = "same";
+			alexpiton	[label = <PITON<BR/>Alex<BR/><I>Respo Alternants</I>> fillcolor="#f05050" penwidth=4 color="blue"];
+		}
+		{ rank = "same";
+            quentinmas [label = "MASCRET\nQuentin" penwidth=4 color="white"];
+		}
+		alexpiton->quentinmas;
+
+		{ rank = "same";
+			gaspardgui	[label = <DE FROMONT<BR/>Gaspard<BR/><I>Vice-Président Externe</I>> fillcolor="#f05050" penwidth=4 color="purple"];
+			
+		}
+        quentinmas->gaspardgui;
+		{ rank = "same";
+			mariepetrel	[label = "PETREL\nMarie"];
+			testtt [label = "DE FROMONT\nGaspard",style = "invis"];
+		}
+        gaspardgui -> testtt [style = "invis"];
+		
+		{ rank = "same";
+			sarahbenoit	[label = <BENOIT-VAMBRE<BR/>Sarah<BR/><I>Respo Rézo</I>> fillcolor="#f05050" penwidth=4 color="pink"];
+			manonbato [label = "BATO\nManon"];
+		}
+		mariepetrel-> sarahbenoit;
+		gaspardgui -> sarahbenoit;
+
+        }
+
+	subgraph cluster_SE2A {
+		label = "SE2A";
+		fillcolor = "#FFE0E0";
+
+		{ rank = "same";
+			bertillesor	[label = <SORIN<BR/>Bertille<BR/><I>Respo Com</I>> fillcolor="#f05050" penwidth=4 color = "blue"];
+			guillaumeherb	[label = "HERBOMEL\nGuillaume"];
+			nathancoulon	[label = "COULON\nNathan"];
+		}
+
+		{ rank = "same";
+			leavicio	[label = "VICIOT\nLéa"];
+			nicolaserc	[label = "ERCEAU\nNicolas"];
+			thomasobl	[label = <OBLED<BR/>Thomas<BR/><I>Partenariats/Goodies</I>> fillcolor="#f05050" penwidth=4 color="deeppink"];
+		}
+		bertillesor -> thomasobl [penwidth=2 color = "#f05050"];
+		guillaumeherb -> leavicio;
+		nathancoulon -> nicolaserc;
+
+		{ rank = "same";
+			tombiot		[label="BIOT\nTom"];
+			adjonard		[label="JONARD\nAdrien"];
+			antoninm     [label = "MACE\nAntonin"];
+		}
+		thomasobl -> tombiot [style=dashed];
+		thomasobl -> adjonard;
+
+		{ rank = "same";
+			remideteve	[label=<Detève<BR/>Rémi<BR/><I>Vice-Président Externe</I>> fillcolor="#f05050" penwidth=4 color="yellow"];
+			martinserg	[label=<Sergeant<BR/>Martin<BR/><I>Respo Alternants</I>> fillcolor="#f05050" penwidth=4 color="yellow"];
+			smarolleau	[label = "MAROLLEAU\nSimon"];
+			faridlazou  [label ="LAZOUACHE\nFarid"];
+		}
+		tombiot -> remideteve;
+		adjonard-> smarolleau;
+		antoninm -> faridlazou;
+		{ rank = "same";
+			elvispet [label = "PEETERMANS\nElvis"];
+			juliettec [label ="CHEVALIER\nJuliette"];
+		}
+        faridlazou -> elvispet;
+        smarolleau -> juliettec;
+	}
+		
+
+
+	endnode [style=invis];
+	
+    antoinesim -> endnode [style = invis];
+    antoinele -> endnode [style = invis];
+    juliettec -> endnode [style = invis];
+	sarahbenoit -> endnode [style = invis];
+	"2025" -> endnode [style=invis];
+}
