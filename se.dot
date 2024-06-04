@@ -20,7 +20,7 @@ digraph se {
 		color = none;
 		node [shape = none];
 
-		"2017" -> "2018" -> "2020" -> "2021" -> "2022" -> "2023" -> "2024" -> "2025";
+		"2017" -> "2018" -> "2020" -> "2021" -> "2022" -> "2023" -> "2024" -> "2025" -> "2026";
 	}
     subgraph cluster_legende {
 		label = "Légende";
@@ -307,7 +307,7 @@ digraph se {
                 abecquet	[label = "BECQUET\nAmaury"];
                 dbenaissa	[label = "BENAISSA\nDjibril"];
                 cboulard	[label = "BOULARD\nClément"];
-                gbura	[label = "BURA\nGuillaume"];
+                gbura	[label = "BURA\nGuillaume" penwidth=4 color="#2128f5"];
                 ccariat	[label = "CARIAT\nCamille"];
                 dcassez	[label =<CASSEZ<BR/>Donovan<BR/><I>Circotech</I>> fillcolor="yellow"];
                 rcatoir		[label = "CATOIR\nRémi"];
@@ -315,7 +315,7 @@ digraph se {
                 acegarra	[label = "CEGARRA\nAntoine"];
                 mchauveliere		[label = "CHAUVELIERE\nMartin"];
                 scruchet	[label = "CRUCHET\nSimon"];
-                lderyckere	[label = "DERYCKERE\nLouis"];
+                lderyckere	[label = "DERYCKERE\nLouis" penwidth=4 color="#2128f5"];
                 rduhr		[label = "DUHR\nRomain"];
                 tduyck		[label = "DUYCK\nThibault"];
                 lgambart	[label = "GAMBART\nLouis"];
@@ -378,16 +378,17 @@ digraph se {
 				rginer	   [label = "GINER\nRémi"];
 				bmoussa	   [label = "MOUSSA\nBilâl"];
 				rboursault [label = "BOURSAULT\nRémi"];
-				mcam       [label = "CAM\nMaël"];
+				mcam       [label =<CAM<BR/>Maël<BR/><I>10^5</I>> penwidth=4 color="purple" fillcolor="yellow"];
 				jwacquet   [label = "WACQUET\nJustin"];
 				yberrada   [label = "BERRADA\nYassine"];
 				vdetrez    [label = "DETREZ\nVictorien"];
 				rbohdan    [label = "BOHDAN-ZAJAC\nRoman"];
-				bisabelle  [label = "BAVUGILIJE\nIsabelle"];
-				akerhasco  [label = "KERHASCOËT\nArthur"];
+				bisabelle  [label = "BAVUGILIJE\nIsabelle" penwidth=4 color="purple"];
+				akerhasco  [label = <KERHASCOËT<BR/>Arthur<BR/><I>Respo Inté/Events</I>> fillcolor="#f05050" penwidth=4 color="green"];
 				itepeli    [label = "TEPELI\nIbrahim"];
 				adjadja    [label = "DJADJA\nAugustin"];
-				swillekens	[label = "WILLEKENS\nSyprien"];
+				swillekens [label = "WILLEKENS\nSyprien"];
+				azongo	   [label = "ZONGO\nAbdel Buchy"];
 				}
 				dcassez->pcasimiri;
 				dcassez->ahoudusse;
@@ -405,9 +406,9 @@ digraph se {
 				mjeanprivat->akerhasco;
 				scruchet->itepeli;
 				abecquet->adjadja;
+				abecquet->azongo;
 				julesperr->swillekens;
 				romainpou->swillekens;				
     }
-	
-	
+		
 }
