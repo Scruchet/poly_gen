@@ -20,7 +20,7 @@ digraph mat {
 		color = none;
 		node [shape = none];
 
-		"2015" -> "2016" -> "2017" -> "2018" -> "2020" -> "2021" -> "2022" -> "2023" -> "2024" -> "2025";
+		"2015" -> "2016" -> "2017" -> "2018" -> "2020" -> "2021" -> "2022" -> "2023" -> "2024" -> "2025" -> "2026";
 	}
 		subgraph cluster_legende {
 		label = "Légende";
@@ -382,27 +382,112 @@ digraph mat {
 		teoleg -> aurelienfran;
 		teoleg -> camillebec;
 		{ rank = "same";
-            camillebia [label = "BIALLAIS\nCamille"];
-            maelbourg  [label = "BOURGUILLEAU\nMaël"];
-            cleomesuet [label = <SUET<BR/>Cléome<BR/><I>Trésorière</I>> fillcolor="#f05050" penwidth=4 color="pink"];
-            julielomb  [label = "LOMBARDO\nJulie"];
-            florianma  [label = "MACCREZ\nFlorian"];
-            leabreger  [label = <<table border="0">
-							<tr><td border="0">BREGER<BR/>Léa</td></tr>
-							<tr><td border="4" color="purple"><I>Respo PeiP</I></td></tr>
-							<tr><td border="4" color="pink"><I>Vice Présidente</I></td></tr>
-						</table>> fillcolor="#f05050"];
-            loanrivere [label = "RIVEREAU\nLoan"];
-            olivierch  [label = "CHEN\Olivier"];
+            camillebia 	[label = "BIALLAIS\nCamille"];
+            maelbourg  	[label = "BOURGUILLEAU\nMaël"];
+            cleomesuet 	[label = <SUET<BR/>Cléome<BR/><I>Trésorière</I>> fillcolor="#f05050" penwidth=4 color="pink"];
+            julielomb  	[label = <LOMBARDO<BR/>Julie<BR/><I>Polydance</I>> fillcolor="yellow"];
+            florianma  	[label = "MACCREZ\nFlorian"];
+            loanrivere 	[label = <RIVEREAU<BR/>Loan<BR/><I>La Fanfare</I>> fillcolor="yellow"];
+            olivierch  	[label = "CHEN\nOlivier"];
+            lhavret		[label = "HAVRET\nLéa"];
+            mmontigny	[label = "MONTIGNY\nMax"];
+            sibrir		[label = "IBRIR\nSelma"];
+            cgrosbois	[label = "GROSBOIS\nCamille"];
+            qberthod	[label = <BERTHOD<BR/>Quentin<BR/><I>Sono</I>> fillcolor="yellow"];
+            ngriveau	[label = "GRIVEAU\nNathan"];
+            ahary		[label = "HARY\nAxelle"];
+            tlecoeuvre	[label = "LECOEUVRE\nThomas"];
+            njaulin		[label = "JAULIN\nNicolas"];
+            hmalvy		[label = "MALVY\nHugo"];
+            ebrechbielh	[label = "BRECHBIELH\nEliot"];
+            ldefrance	[label = "DEFRANCE\nLaléna"];
+            efuster		[label = "FUSTER\nEmma"];
+            claugier	[label = "LAUGIER\nClément"];
+            tmarcant	[label = "MARCANT\nThibault"];
+            ndebsi		[label = "DEBSI\nNour"];
+            lschisler	[label = "SCHISLER\nLukas"];
+
 		}
 		remidilli -> cleomesuet;
 		camillebec -> camillebia;
 		arthurgarr -> julielomb;
 		arthurgarr -> olivierch;
 		loanrivere -> jeannedav;
+
+		{ rank = "same";
+			leabreger  	[label = <<table border="0">
+				<tr><td border="0">BREGER<BR/>Léa</td></tr>
+				<tr><td border="4" color="purple"><I>Respo PeiP</I></td></tr>
+				<tr><td border="4" color="pink"><I>Vice Présidente</I></td></tr>
+			</table>> fillcolor="#f05050"];
+			hmorel		[label = <MOREL<BR/>Hugo<BR/><I>Respo Inté/Events</I>> fillcolor="#f05050" penwidth=4 color="green"];
+			jbrejot		[label = "BREJOT\nJuliette"];
+			nlemoine	[label = "LEMOINE\nNathan"];
+			sduchesne	[label = "DUCHESNE\nSam"];
+			cfraysse	[label = "FRAYSSE\nCélia" penwidth=4 color="purple"];
+			aamico		[label = "D'AMICO\nAlexandra"];
+			opellaumail	[label = <PELLAUMAIL<BR/>Oscar<BR/><I>Respo Partenariats/Goodies</I>> fillcolor="#f05050" penwidth=4 color="green"];
+			jlemerle	[label = "LEMERLE\nJean"];
+			abrothier	[label = "BROTHIER\nAxel"];
+			iyannic		[label = "YANNIC\nIsaura"];
+			sklis		[label = "KLIS\nSamir"];
+			ggispert	[label = <GISPERT<BR/>Guillaume<BR/><I>L'Instru (2023)</I>> fillcolor="yellow"];
+			apodolak	[label = "PODOLAK\nAgathe"];
+			mehdi		[label = "Mehdi"];
+			arenaud		[label = "RENAUD\nAlbane"];
+			smorel		[label = "MOREL\nSimon"];
+			znacinovic	[label = "NACINOVOC\nZacharie"];
+			sdandres	[label = "DANDRES\nSimon"];
+			tcolras		[label = "COLRAS\nThéo"];
+			ldelahaye	[label = "DELAHAYE\nLouis"];
+			mkenmogne	[label = "KENMOGNE\nMarc-Aurel"];
+			lhamdi		[label = "HAMDI\nLina"];
+			eduplouich	[label = "DUPLOUICH\nErwann"];
+			rpiveteau	[label = "PIVETEAU\nRonan"];
+			emackenzie	[label = <MACKENZIE<BR/>Etienne<BR/><I>Vice Président</I>> fillcolor="#f05050" penwidth=4 color="green"];
+			epierron	[label = "PIERRON\nEytan"];
+		}
+		cleomesuet	-> hmorel;
+		cleomesuet	-> jbrejot;
+		julielomb	-> nlemoine;
+		julielomb	-> sduchesne;
+		leabreger	-> cfraysse;
+		lhavret 	-> aamico;
+		florianma	-> opellaumail;
+		mmontigny	-> abrothier;
+		sibrir		-> iyannic;
+		cgrosbois	-> iyannic;
+		loanrivere	-> sklis;
+		qberthod	-> ggispert;
+		camillebia	-> apodolak;
+		ngriveau	-> mehdi;
+		ahary		-> arenaud;
+		olivierch	-> smorel;
+		maelbourg	-> smorel;
+		tlecoeuvre	-> ggispert; //Autres redoublants ?
+		// tlecoeuvre -> redoublants sauf leabreger
+		njaulin		-> znacinovic;
+		hmalvy		-> tcolras;
+		ggispert	-> ldelahaye;
+		ebrechbielh -> mkenmogne;
+		ldefrance	-> lhamdi;
+		efuster		-> eduplouich;
+		efuster		-> rpiveteau;
+		claugier	-> emackenzie;
+		tmarcant	-> epierron;
+		ndebsi		-> ggispert;
+		lschisler	-> leabreger;
+		loanrivere	-> leabreger;
+		cleomesuet	-> leabreger;
+		ngriveau	-> leabreger;
+		olivierch	-> leabreger;
+		camillebia	-> leabreger;
+		julielomb	-> leabreger;
+		claugier	-> leabreger;
+
 	}
 	endnode [style=invis];
 
-	camillebec -> endnode [style=invis];
-	"2024" -> endnode [style=invis];
+	apodolak -> endnode [style=invis];
+	"2026" -> endnode [style=invis];
 }

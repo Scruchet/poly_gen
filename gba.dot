@@ -20,7 +20,7 @@ digraph gba {
 		color = none;
 		node [shape = none];
 
-		"2015" -> "2016" -> "2017" -> "2018" -> "2020" -> "2021" -> "2022" -> "2023" -> "2024" -> "2025";
+		"2015" -> "2016" -> "2017" -> "2018" -> "2020" -> "2021" -> "2022" -> "2023" -> "2024" -> "2025" -> "2026";
 	}
 	
     	subgraph cluster_legende {
@@ -409,7 +409,7 @@ digraph gba {
 			amandinegraf	[label = "GRAFTEAUX\nAmandine"];
 			anabelleza		[label = "ZARZOV\nAnabelle"];
 			anoukcam	[label = "CAMERLYNCK\nAnouk"];
-			antoninvau		[label = "VAUZELLE\nAntonin"];
+			antoninvau		[label = "VAUZELLE\nAntonin" penwidth=4 color="#2128f5"];
 			audreyrust	[label = "RUSTER\nAudrey"];
 			benjaminh		[label = "HESS\nBenjamin"];
 			celinepotel	[label = "POTEL\nCeline"];
@@ -419,7 +419,7 @@ digraph gba {
 							<tr><td border="4" color="purple"><I>Respo PeiP</I></td></tr>
 							<tr><td border="4" color="pink"><I>Respo Inté/Events</I></td></tr>
 						</table>> fillcolor="#f05050"];
-			chloepot		[label = "POTTIER\nChloé"];
+			chloepot		[label = "POTTIER\nChloé" penwidth=4 color="#2128f5"];
 			clemencebou	[label = "BOUSQUET\nClémence"];
 			elinemarion		[label = "MARION\nEline"];
 			eliseoger	[label = "OGER\nElise"];
@@ -432,9 +432,9 @@ digraph gba {
 			juliettemoe		[label = "MOERMAN\nJuliette"];
 			julietteweb [label = "WEBER\nJuliette"];
 			justinebous	[label = "BOUSCHET\nJustine"];
-			justinerobi		[label = "ROBIQUET\nJustine"];
+			justinerobi		[label = <ROBIQUET<BR/>Justine<BR/><I>EESTEC</I>> fillcolor="yellow" penwidth=4 color="#2128f5"];
 			leapatta	[label = "PATTARD\nLéa"];
-			leanemar		[label = "MARTIN\nLéane"];
+			leanemar		[label = <MARTIN<BR/>Léane<BR/><I>10^5</I>> fillcolor="yellow"];
 			lenacas	[label = "CASALI\nLéna"];
 			lenamar		[label = "MARTINEZ\nLéna"];
 			lisatac	[label = <TACAIL<BR/>Lisa<BR/><I>Respo Communication</I>> fillcolor="#f05050" penwidth=4 color="pink"];
@@ -448,7 +448,7 @@ digraph gba {
 			matthisvan	[label = "VANTOMME\nMatthis"];
 			melanierev		[label = "REVOL\nMélanie"];
 			paulinelam	[label = "LAMBERT\nPauline"];
-			remiletoil		[label = "LETOILE\nRémi"];
+			remiletoil		[label = <LETOILE<BR/>Rémi<BR/><I>Rock</I>> fillcolor="yellow"];
 			sarahmart	[label = "MARTIN\nSarah"];
 			sofianmert		[label = "MERTENS\nSofian"];
 			timotheeha	[label = "HAMBLIN\nTImothée"];
@@ -508,9 +508,83 @@ digraph gba {
     suzanedesc -> matthisvan;
     zoelovi -> julietteweb;
     
+    { rank="same";
+		xtroulier	[label = "TROULIER\nXavier"];
+		mkson		[label = "KSON\nMarion" penwidth=4 color="purple"];
+		ploiseleur	[label = "LOISELEUR\nPauline"];
+		mfievet		[label = "FIEVET\nMartin"];
+		tcarton		[label = "CARTON\nThéo"];
+		amaury		[label = <MAURY<BR/>Amandine<BR/><I>Secrétaire</I>> fillcolor="#f05050" penwidth=4 color="green"];
+		ekaag		[label = "KAAG\nEnola"];
+		ngonzalez	[label = <GONZALEZ<BR/>Nathan<BR/><I>Respo DD/Prev</I>> fillcolor="#f05050" penwidth=4 color="green"];
+		mtrobo		[label = "TROBO\nMay-Linn" penwidth=4 color="purple"];
+		edurand		[label = <DURAND<BR/>Emilie<BR/><I>Pompoms</I>> penwidth=4 color="purple" fillcolor="yellow"];
+		cbellanger	[label = "BELLANGER\nCylia" penwidth=4 color="purple"];
+		hlorin		[label = "LORIN\nHugo" penwidth=4 color="purple"];
+		charzic		[label = "HARZIC\nClémence"];
+		labravanel	[label = <ABRAVANEL<BR/>Lina<BR/><I>Vice-présidente / Respo International</I>> fillcolor="#f05050" penwidth=4 color="green"];
+		eoukaddour	[label = "OUKADDOUR\nElias"];
+		hdauphin	[label = "DAUPHIN\nHéloïse"];
+		lcombasson	[label = "COMBASSON\nLouisa"];
+		eingelaere	[label = "INGELAERE\nEmma"];
+		mdaguillanes[label = "DAGUILLANES\nMargaux"];
+		kdavignon	[label = "DAVIGNON\nKristen"];
+		arolland	[label = "ROLLAND\nAgathe"];
+		brobillard	[label = "ROBILLARD\nBenjamin"];
+		carab		[label = "ARAB\nCéline"];
+		fdjallo		[label = "DJALLO\nFatoumata"];
+		mngo		[label = "NGO\nMeïdine"];
+		sdissart	[label = "DISSART\nSolène"];
+		lfavrou		[label = "FAVROU\nLaura"];
+		mingabire	[label = "INNGABIRE\nMicky-Yolaine"];
+		samore		[label = "AMORE\nSolène"];
+		achaumat	[label = "CHAUMAT\nAntonin"];
+		amonlouis	[label = "MONLOUIS\nAlysée"];
+		cchopin		[label = "CHOPIN\nChloé"];
+		lalglave	[label = "ALGLAVE\nLéo"];
+	}
+	lenamar 	-> xtroulier;
+	chloepot 	-> mkson;
+	mhrlleherv	-> ploiseleur;
+	justinerobi -> mfievet;
+	trystanmar	-> tcarton;
+	antoninvau 	-> amaury;
+	lucaslaur 	-> ekaag;
+	chloephil	-> ngonzalez;
+	lisatac		-> mtrobo;
+	evamout		-> edurand;
+	emelinebal	-> cbellanger;
+	leanemar	-> hlorin;
+	julietteweb	-> charzic;
+	paulinelam	-> labravanel;
+	zoemadesc	-> labravanel;
+	zoemadesc	-> eoukaddour;
+	jademelet	-> hdauphin;
+	leapatta	-> lcombasson;
+	remiletoil	-> eingelaere;
+	manonhuss	-> mdaguillanes;
+	anoukcam	-> kdavignon;
+	louisecorm	-> kdavignon;
+	justinebous	-> arolland;
+	benjaminh	-> brobillard;
+	juliettemoe	-> brobillard;
+	juliettemoe	-> carab;
+	celinepotel	-> fdjallo;
+	juliefray	-> fdjallo;
+	juliefray	-> mngo;
+	jadecour	-> sdissart;
+	jadecour	-> lfavrou;
+	elinemarion	-> mingabire;
+	maevasal	-> mingabire;
+	matthieucha	-> samore;
+	matthisvan	-> achaumat;
+	jeanbaptiste-> amonlouis;
+	jeanbaptiste-> cchopin;
+	clemencebou	-> lalglave;
+
     }
 	endnode [style=invis];
 
-    anabelleza -> endnode [style = invis];
-	"2025" -> endnode [style=invis];
+    mtrobo -> endnode [style = invis];
+	"2026" -> endnode [style=invis];
 }
