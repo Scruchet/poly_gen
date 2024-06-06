@@ -20,7 +20,7 @@ digraph alternants {
 		color = none;
 		node [shape = none];
 
-		"2021" -> "2022" -> "2023" -> "2024"->"2025";
+		"2021" -> "2022" -> "2023" -> "2024"-> "2025" -> "2026";
 	}
 
 	subgraph cluster_legende {
@@ -151,6 +151,11 @@ digraph alternants {
         titouancheva -> loucandyce;
         lukasalb -> phillippela;
         lukasalb -> leobernae;
+
+        { rank = "same";
+			invis1 [style=invis];
+        }
+        antoinesim -> invis1;
 	}
 
 	subgraph cluster_prod {
@@ -197,6 +202,11 @@ digraph alternants {
         antoinelepr -> antoinele;
         ldalby -> melinadia;
         thomasfris -> thomasliess;
+
+        { rank = "same";
+			invis2 [style=invis];
+        }
+        zelielacres -> invis2;
         
 	}
 	subgraph cluster_GC2A {
@@ -224,9 +234,17 @@ digraph alternants {
 		{ rank = "same";
 			sarahbenoit	[label = <BENOIT-VAMBRE<BR/>Sarah<BR/><I>Respo Rézo</I>> fillcolor="#f05050" penwidth=4 color="pink"];
 			manonbato [label = "BATO\nManon"];
+			valentin	[label = "Valentin"];
 		}
 		mariepetrel-> sarahbenoit;
 		gaspardgui -> sarahbenoit;
+
+		{ rank = "same";
+			alamy		[label = "LAMY\nArthur"];
+			rsalameh	[label = "SALAMEH\nRebecca"];
+			dcocrelle	[label = "COCRELLE\nDorian"];
+        }
+        valentin -> dcocrelle;
 
         }
 
@@ -272,15 +290,20 @@ digraph alternants {
 		}
         faridlazou -> elvispet;
         smarolleau -> juliettec;
+
+        { rank = "same";
+			invis3 [style=invis];
+        }
+        juliettec	-> invis3
 	}
 		
 
 
 	endnode [style=invis];
 	
-    antoinesim -> endnode [style = invis];
-    antoinele -> endnode [style = invis];
-    juliettec -> endnode [style = invis];
-	sarahbenoit -> endnode [style = invis];
-	"2025" -> endnode [style=invis];
+    invis1 -> endnode [style = invis];
+    invis2 -> endnode [style = invis];
+    invis3 -> endnode [style = invis];
+	dcocrelle -> endnode [style = invis];
+	"2026" -> endnode [style=invis];
 }
