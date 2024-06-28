@@ -132,6 +132,8 @@ digraph alternants {
 			loucandyce [label = "FERRAND\nLou-Candyce"];
 			phillippela [label = "LARGUIER\nPhilippe"];
 			leobernae    [label = "BERNAERT\nLéo"];
+			ldebast  [label = "DEBAST\Louison"];
+			azarktouni [label = "ZARKTOUNI\nAchraf"];
 		}
         albinneu -> antoinesim;
         albinneu -> lilouflo;
@@ -151,11 +153,34 @@ digraph alternants {
         titouancheva -> loucandyce;
         lukasalb -> phillippela;
         lukasalb -> leobernae;
+		{ rank = "same";
+			pledoeuf  	[label = "LEDOEUF\nPierre-Louis"];
+			egautier 	[label = <GAUTIER<BR/>Emilie<BR/><I>Respo Alternants</I>> fillcolor="#f05050" penwidth=4 color="green"];
+			cviella  	[label = "VIELLA\nCharlotte"];
+			mgeorges 	[label = "GEORGES\Mathis"];
+			vwijsman	[label = "WIJSMAN\nVictor"];
+			lcoelho    	[label = "COELHO\nLisa-Marie"];
+			mgabard 	[label = <GABARD<BR/>Marie<BR/><I>Respo Inté/Event</I>> fillcolor="#f05050" penwidth=4 color="green"]
+		}	
+		antoinesim->pledoeuf;
+		lilouflo->ldebast;
+		louiskerv->egautier;
+		romainlop->mgabard;
+		maddyporc->ldebast;
+		elisaquen->pledoeuf;
+		etiennedel->cviella;
+		arthurach->azarktouni;
+		ameliegra->vwijsman;
+		laurawan->lcoelho;
+		clementmar->mgabard;
+		loucandyce->mgeorges;
+		phillippela->azarktouni;
+		gauthierpl->azarktouni;
+		leobernae->egautier;
 
         { rank = "same";
 			invis1 [style=invis];
         }
-        antoinesim -> invis1;
 	}
 
 	subgraph cluster_prod {
