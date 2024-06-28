@@ -20,7 +20,7 @@ digraph iia {
 		color = none;
 		node [shape = none];
 
-		"2021" -> "2022" -> "2023" -> "2024" -> "2025";
+		"2021" -> "2022" -> "2023" -> "2024" -> "2025" -> "2026";
 	}
     	subgraph cluster_legende {
 		label = "Légende";
@@ -104,18 +104,35 @@ digraph iia {
 			agathechop [label = "CHOPIN\nAgathe"];
 			raphaelcle [label = <CLEMENT<BR/>Raphaël<BR/><I>Vice-Président</I>> fillcolor="#f05050" penwidth=4 color="pink"];
 			emmariot   [label = <RIOT<BR/>Emma<BR/><I>Respo Clubs</I>> fillcolor="#f05050" penwidth=4 color="pink"];
+			ldumenil   [label = <DUMENIL<BR/>Léonie<BR/><I>Prev</I>> fillcolor="#f05050" penwidth=4 color="pink"];
 			corentinec [label = "ECORCE\nCorentin"];
 			theoborel  [label = <BORRELY<BR/>Théo<BR/><I>Respo Inté/Events</I>> fillcolor="#f05050" penwidth=4 color="pink"]; 
-			gabrielbr  [label = "BREMARD\nGabriel"];
+			gabrielbr  [label = "BREMARD\nGabriel" penwidth=4 color="#2128f5"];
 		}
 		romainorp -> corentinec;
 		romainorp -> theoborel;
-		emilebct -> constance;
+		emilebct -> constancep;
 		emilebct -> raphaelcle;
 		emilebct -> emmariot;
 		chloenico->arnaudauz;
 		didieraud -> gabrielbr;
 
+
+		{ rank="same";
+			amelin 		[label = "MELIN\nArthur"];
+			asenez 		[label = "SENEZ\Alexis" penwidth=4 color="green"];
+			tlebrun 	[label = <LEBRUN<BR/>Thibault<BR/><I>Respo Rézo</I>> fillcolor="#f05050" penwidth=4 color="purple"];
+			jcratz		[label =<CRATZ<BR/>Justine<BR/><I>PULCE</I>> fillcolor="yellow"];
+			clalance	 [label = "LALANE\nCandice"];
+			gsibille 	[label = "SIBILLE\nGuillaume"];
+		}
+			raphaelcle->amelin;
+			ldumenil->asenez;
+			ldumenil->clalance;
+			gabrielbr->tlebrun;
+			gabrielbr->gsibille;
+			emmariot->jcratz;
+		
 		//portalSE -> romainorp [style=dashed penwidth=2 color="#f05050"];
 	}
 
