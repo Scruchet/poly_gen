@@ -20,7 +20,7 @@ digraph is {
 		color = none;
 		node [shape = none];
 
-		"2018" -> "2020" -> "2021" -> "2022" -> "2023" -> "2024" -> "2025";
+		"2019" -> "2020" -> "2021" -> "2022" -> "2023" -> "2024" -> "2025" -> "2026";
 	}
 		subgraph cluster_legende {
 		label = "Légende";
@@ -193,7 +193,6 @@ digraph is {
 		raphael -> nicolasvois;
 
 		{ rank="same";
-			adrienpech	[label = <PECHER<BR/>Adrien<BR/><I>Le PaF!</I>> fillcolor="yellow" penwidth=4 color="orange"];
 			affletemaelys	[label = "TIEHA\nAfflété Maëlys"];
 			alexandrerev	[label = "REVILLON\nAlexandre"];
 			amandineleg	[label = "LEGIERSKY\nAmandine"];
@@ -209,7 +208,6 @@ digraph is {
 			emilianlor	[label = "LORIC\nEmilian"];
 			emmalef		[label = "LE FRANC\nEmma"];
 			ilyastiou	[label = "TIOUASSIOUINE\nIlyas"];
-			julescharp	[label = <CHARPENIET<BR/>Jules<BR/><I>Respo Com</I>> fillcolor="#f05050" penwidth=4 color="yellow"];
 			katia		[label = "PERVIVA\nKatia"];
 			kenzee		[label = "ABOUSTAIT\nKenzée"];
 			kevin		[label = "MASSON\nKevin"];
@@ -289,16 +287,17 @@ digraph is {
 		yannisheg -> emilianlor;
 		yannisheg -> othmane;
 		{ rank="same";
+			julescharp		[label = <CHARPENIET<BR/>Jules<BR/><I>Respo Com</I>> fillcolor="#f05050" penwidth=4 color="yellow"];
             akanhanaa		[label = "AKAN\nHanaa"];
+			adrienpech		[label = <PECHER<BR/>Adrien<BR/><I>Le PaF!</I>> fillcolor="yellow" penwidth=4 color="orange"];
             florianbos      [label = <BOSSEBOEUF<BR/>Florian<BR/><I>Respo Communication</I>> fillcolor="#f05050" penwidth=4 color="pink"];
             remicleme       [label = "CLEMENT\nRémi"];
-            clementineko    [label = "KOEHK\nClémentine"];
-            irisdepagneu    [label = "DEPAGNEUX\nIris"];
+            clementineko    [label = "KOEHL\nClémentine"];
             audrendetrai    [label = "DETRAIT\nAudren"];
             yohanndela      [label = "DELABARRE\nYohann"];
             scottmcgu       [label = "MC GUIGUN\nScott"];
-            mathieuduque     [label = "DUQUENOY\nMathieu"];
-            louisferran     [label = "FERRAND\nLouis"];
+            mathieuduque    [label = "DUQUENOY\nMathieu"];
+            louisferran     [label = <FERRAND<BR/>LOUIS<BR/><I>Polygames</I>> fillcolor="yellow"];
             yasminefizi     [label = "FIZI\nYasmine"];
             yohangaudin     [label = "GAUDIN\nYohan"];
             simonhuaume     [label = "HUAUME\nSimon"];
@@ -307,20 +306,25 @@ digraph is {
             arthurmady      [label = "MADY\nArthur"];
             matteomoura     [label = "MOURAO\nMattéo"];
             anasnay         [label = "NAY\nAnas"];
-            mathieupall    [label = "PALLATIN\nMathieu"];
+            mathieupall     [label = "PALLATIN\nMathieu"];
             pierrephili     [label = "PHILIPPOT\nPierre"];
             dimitrisech     [label = "SECHEHAYE\nDimitri"];
             ninaserck       [label = "SERCK\nNina"];
             tariqtambar     [label = "TAMRABET\nTariq"];
-            titouanavr      [label = "AVRY\nTitouan"];
             clementverd     [label = "VERDIER\nClément"];
             yannpique       [label = "PIQUE\nYann"];
+			mrousselot		[label = "ROUSSELOT\nMarie"];
+			maittahar		[label = "AITTAHAR\nMaryam"];
+			lmoutardier		[label = "MOUTARDIER\nLucien"];
+			mboubacar		[label = "BOUBACAR\nMalika"];
+			mdufresne		[label = "DUFRESNE\nMargaux"];
         }
         ilyastiou ->akanhanaa;
-        tomroq -> florianbos;
-        julescharp -> florianbos;
+        tomroq -> florianbos [penwidth=2 color = "#f05050"];
+        julescharp -> florianbos [penwidth=2 color = "#f05050"];
         romainmass -> remicleme;
         adrienpech -> clementineko;
+        clementineko -> adrienpech;
         carlabuo -> irisdepagneu;
         maximeleb -> audrendetrai;
         alexandrerev -> mathieuduque;
@@ -345,10 +349,66 @@ digraph is {
         martindor -> yannpique;
         loliboutil ->yohanndela;
         loliboutil -> scottmcgu;
+	
+	{ rank="same";
+			irisdepagneu    [label = <DEPAGNEUX<BR/>IRIS<BR/><I>L'Huma</I>> fillcolor="yellow"];
+            rfush		[label = "FUSH\nRomy"];
+			sgiraud 	[label = "GIRAUD\nSolène"];
+			htassa  	[label = "TASSA\nHiba"];
+			mmarthelot  [label = "MARTHELOT\nMathis"];
+			fvantorre   [label = "VANTORRE\nFrançois"];
+			hmathu		[label = "MATHU\nHugo"];
+			dlahanque   [label = "LAHANQUE\nDamien"];
+			nailane     [label = "AILANE\nNisrine"];
+			akurudere   [label = "KURUDERE\nAksel"];
+			mbouvier    [label = "BOUVIER\nMateo"];
+			llabis		[label = "LABIS\nLeane"];
+			eramili     [label = "RAMILI\nElias"];
+			cbaron 		[label = "BARON\nClément"];
+			irouabah	[label = "ROUABAH\nIslem"];
+			abonnefant	[label = "BONNENFANT\nAntoinin"];
+			rhajjaji	[label = "HAJJAJI\nRayane"];
+			eschneider  [label = "SCHNEIDER\nLéo"];
+			ogualde		[label = "GUALDE\nOriane"];
+			azaieter	[label = "ZAIETER\nAmbrine"];
+			mkiewsky	[label = <KIEWSKY<BR/>MATTEO<BR/><I>La Régate</I>> fillcolor="yellow"];
+			titouanavr  [label = "AVRY\nTitouan"];
+			ecastol 	[label = "CASTOLO OVIEDO\nEverardo"];
+			alo 		[label = "LO\nAmy"];
+			asoissons   [label = "SOISSONS\nAriinui"];
+			acanal		[label = "CANAL\nAurélien"];
+			ebaranowski [label = "BARANOWSKI\nEléa"];
+        }
+		vincentlemeur->rfush;
+		vincentlemeur->sgiraud;
+		simonhuaume->htassa;
+		clementineko ->mmarthelot;
+		yohangaudin->fvantorre;
+		yohangaudin->hmathu;
+	
+		adrienpech->dlahanque;
+		mrousselot->nailane;
+		mrousselot->akurudere;
+		clementverd->mbouvier;
+		remicleme->llabis;
+		remicleme->eramili;
+		florianbos ->cbaron;
+		florianbos ->irouabah;
+		louisferran->abonnefant;
+		mathieupall->rhajjaji;
+		dimitrisech->ecastol;
+		dimitrisech->eschneider;
+		maittahar->ogualde;
+		maittahar->azaieter;
+		irisdepagneu->mkiewsky;
+		lmoutardier->ecastol;
+		mboubacar->alo;
+		arthurmady->asoissons;
+		matteomoura->acanal;
+		mdufresne->ebaranowski;
 	}
-
 	endnode [style=invis];
 
-	othmane -> endnode [style=invis];
-	"2024" -> endnode [style=invis];
+	ebaranowski -> endnode [style=invis];
+	"2026" -> endnode [style=invis];
 }
