@@ -20,7 +20,7 @@ digraph meca {
 		color = none;
 		node [shape = none];
 
-		"2012" -> "2013" -> "2014" -> "2015" -> "2016" -> "2017" -> "2018" -> "2020" -> "2021" -> "2022" -> "2023" -> "2024"-> "2025";
+		"2012" -> "2013" -> "2014" -> "2015" -> "2016" -> "2017" -> "2018" -> "2020" -> "2021" -> "2022" -> "2023" -> "2024"-> "2025" -> "2026";
 	}
     	subgraph cluster_legende {
 		label = "Légende";
@@ -372,12 +372,13 @@ digraph meca {
 			ninonrayn   [label = "RAYNAUD-SCHELL\nNinon"];
 			ornellaan   [label = "ANDRIANA\nOrnella"];
 			paulselli   [label = "SELLIER\nPaul"];
-			quentindec  [label = "DECAYEUX\nQuentin"];
 			romainhoz   [label = "HORAZE\nRomain"];
 			simonclott  [label ="CLOTTES\nSimon"];
 			sofiadarb   [label = "DARBANE\nSofia"];
 			tevainuiha  [label = "HAMBLIN\nTevainui"];
 			wandyfr     [label = "FRANCE\nWandy"];
+			mdevos	[label = "DEVOS\nMartin"];
+			mmorel	[label = "MOREL\nMathis"];
 			}
             alicevall->laurene;
 			anthonymott->baptisterou;
@@ -416,23 +417,53 @@ digraph meca {
 			theogamb->mathildeva;
 			williambodd->eliotpott;
 			yonamdc->aubinvairel;
-			
-        
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+{ rank = "same";
+			maelb		[label = "B\nMael"];
+			mkernec		[label = "KERNEC\nMartin"];
+			adebas		[label = <DEBAS<BR/>Antoine<BR/><I>Inté/Events</I>> fillcolor="#f05050" penwidth=4 color="green"];
+			lsabin		[label = <SABIN<BR/>Léo<BR/><I>Respo Rézo</I>> fillcolor="#f05050" penwidth=4 color="green"];
+			mfabie		[label = "FABIE\nMatteo"];
+			lthomas		[label = <THOMAS<BR/>Louis<BR/><I>Trésorier</I>> fillcolor="#f05050" penwidth=4 color="green"];
+			efakhoury	[label = <FAKHOURY<BR/>Eliott<BR/><I>Président</I>> fillcolor="#f05050" penwidth=4 color="green"];
+			lhanotel	[label = "HANOTEL\nLéa"];
+			mbretillon	[label = "BRETILLON\nMathilde"];
+			lucas		[label = "\nLucas"];
+			trobin		[label = "ROBIN\nTristan"];
+			jfavereaux	[label = "FAVEREAUX\nJules"];
+			ldelaby		[label = "DELABY\nLéonie"];
+			loris		[label = "\nLoris"];
+			mdebenne	[label = "DEBENNE\nManon"];
+			efornaciari	[label = "FORNACIARI\nEnzo"];
+			tl			[label = "L\nThomas"];
+			bverley		[label = "VERLEY\nBastien"];
+			quentindec  [label = "DECAYEUX\nQuentin"];
+			adonval		[label = "DONVAL\nArthur"];
+			mduclay		[label = "DUCLAY\nMaxime"];
+			}
+			mdevos->maelb;
+			guilhemdbn->adebas;
+			clementchw->mkernec;
+			arthurdvl->lsabin;
+			emilemaur->mfabie;
+			emilemaur->lthomas;
+			claracarp->efakhoury;
+			aubinvairel->efakhoury;
+			guilhemdbn->efakhoury;
+			louannot->lhanotel;
+			mathildeva->mbretillon;
+			armandlef->loris;
+			laurene->mdebenne;
+			simonclott->efornaciari;
+			eliotpott->tl;
+			claracarp->bverley;
+			eliotpott->quentindec;
+			alexandreth->quentindec;
+			ninonrayn->adonval;
+			mmorel->mduclay;
 	}
 
 	endnode [style=invis];
 
 	emmacarp -> endnode [style=invis];
-	"2024" -> endnode [style=invis];
+	"2026" -> endnode [style=invis];
 }
