@@ -92,7 +92,10 @@ digraph iia {
 			emilebct	[label = "BOUCHET \nEmile" penwidth=4 color="orange"];
 			agatleduc	[label = "LEDUC\nAgathe" penwidth=4 color="orange"];
 			romainorp	[label = <ORPEL<BR/>Romain<BR/><I>Inté/Events</I>> fillcolor="#f05050" penwidth=4 color="yellow"];
+			kbouguetaia [label="BOUGUETAIA\nKenza"];
+
 		}
+		elboulac -> kbouguetaia;
 		evapicrou -> chloenico;
 		evapicrou -> didieraud;
 		smitty -> chloenico;
@@ -107,7 +110,7 @@ digraph iia {
 			ldumenil   [label = <DUMENIL<BR/>Léonie<BR/><I>Prev</I>> fillcolor="#f05050" penwidth=4 color="pink"];
 			corentinec [label = "ECORCE\nCorentin"];
 			theoborel  [label = <BORRELY<BR/>Théo<BR/><I>Respo Inté/Events</I>> fillcolor="#f05050" penwidth=4 color="pink"]; 
-			gabrielbr  [label = "BREMARD\nGabriel" penwidth=4 color="#2128f5"];
+			gabrielbr  [label = <BREMARD<BR/>Gabriel<BR/><I>Respo Goodies</I>> fillcolor="#f05050" penwidth=4 color="#2128f5"];
 		}
 		romainorp -> corentinec;
 		romainorp -> theoborel;
@@ -120,12 +123,15 @@ digraph iia {
 
 		{ rank="same";
 			amelin 		[label = "MELIN\nArthur"];
-			asenez 		[label = "SENEZ\Alexis" penwidth=4 color="green"];
+			rchalabi    [label = "CHALABI\nRamzy"];
+			asenez 		[label = <SENEZ<BR/>Alexis<BR/><I>Respo Clubs</I>> fillcolor="#f05050" penwidth=4 color="green"];
 			tlebrun 	[label = <LEBRUN<BR/>Thibault<BR/><I>Respo Rézo</I>> fillcolor="#f05050" penwidth=4 color="purple"];
 			jcratz		[label =<CRATZ<BR/>Justine<BR/><I>PULCE</I>> fillcolor="yellow"];
-			clalance	 [label = "LALANE\nCandice"];
+			clalance	[label = "LALANE\nCandice"];
 			gsibille 	[label = "SIBILLE\nGuillaume"];
+
 		}
+			theoborel ->rchalabi
 			raphaelcle->amelin;
 			ldumenil->asenez;
 			ldumenil->clalance;

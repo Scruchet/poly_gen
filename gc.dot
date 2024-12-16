@@ -20,7 +20,7 @@ digraph gc {
 		color = none;
 		node [shape = none];
 
-		"2013" -> "2014" -> "2015" -> "2016" -> "2017" -> "2018" -> "2020" -> "2021" -> "2022" -> "2023" -> "2024" -> "2025";
+		"2013" -> "2014" -> "2015" -> "2016" -> "2017" -> "2018" -> "2020" -> "2021" -> "2022" -> "2023" -> "2024" -> "2025" -> "2026";
 	}
 		subgraph cluster_legende {
 		label = "Légende";
@@ -219,7 +219,7 @@ digraph gc {
 		wiame -> leadudkowi;
 		yannistouns -> elisalemee;
 
-		{ rank = "same";
+		{ rank = "same";//2024
             adamvascon  [label = "VASCONCELOS\nAdam"];
             adjouaayik  [label = "AYIKPE\nAdjoua"];
 			adrienschne	[label = "SCHNEIDER\nAdrien"];
@@ -261,6 +261,7 @@ digraph gc {
 			valentineven [label = "VANDOMME\nValentine"];
 			yacinesaguer [label = "SAGUER\nYacine"];
 			zinedineait  [label = "AIT GANA\nZinedine"];
+			jyang		 [label = "YANG\nJoung Yun"];
 		}
         emmavandyck -> ezragatt;
 		axellelecler -> matisdavid;
@@ -278,14 +279,14 @@ digraph gc {
 		louissoulard -> lucasbordet;
 		luciecarette -> valentincha;
 		valentineleu -> martindelb;
-		{ rank = "same";
+		{ rank = "same";//2025
             adamderno   [label = "DERNONCOURT\nAdam"];
             amineaita   [label = "AIT AHMED\nAmine"];
             antoinebul  [label = "BULTEL\nAntoine"];
             antoineeck  [label = "ECK\nAntoine"];
             arthurrena  [label = "DUPONT\nClément"];
             baptisteeh  [label = "EHRART\nBaptiste"];
-            baptistevae [label = "VAESKEN\nBptiste"];
+            baptistevae [label = "VAESKEN\nBaptiste"];
             basmabouta  [label = "BOUTALLAKA\nBasma"];
             corentinbet [label = "BETANCOURT\nCorentin"];
             eliecrasna  [label = "CRASNAULT\nElie"];
@@ -318,16 +319,15 @@ digraph gc {
             robertnken  [label = "NKEN\nRobert"];
             solenegira  [label = "GIRAUD\nSolène"];
             tanguydela  [label = "DELAUNOY\nTanguy"];
-            theomamel   [label = "MAMELIN\nThéo"];
             titouanle   [label = <LE BORGNE<BR/>Titouan<BR/><I>Respo Inté/Events</I>> fillcolor="#f05050" penwidth=4 color="pink"];
             tonyphaly   [label = "PHALYSANH\nTony"];
             valentinede [label = "DE GROOTE\nValentine"];
             yaniscasse  [label = "CASSEREAU\nYanis"];
             yanndemass  [label = "DEMASSIET\nYann"];
-            testb   [label = "\n\n", style = invis];
-            testa   [label = "\n\n", style = invis];
+
 
 		}
+		jyang -> basmabouta;
 		arthurbonif -> testb [style = invis];
 		arthurbonif -> testa [style = invis];
 		adamvascon -> tanguydela;
@@ -372,7 +372,44 @@ digraph gc {
         yacinesaguer -> mateopons;
         yacinesaguer -> evadegran;
         zinedineait -> eliotlegr;
+	{ rank = "same";//2026
+		emazzoli  [label = "MAZZOLI\nEthan"];
+		theomamel  [label = <MAMELIN<BR/>Théo<BR/><I>EESTEC</I>> fillcolor="yellow" penwidth=4 color="blue"];
+		aboudet [label = "BOUDET\nAlix"];
+		jtrouve [label = "TROUVE\nJade"];
+		nberthoud [label = "BERTHOUD\nNicolas"];
+		mbourge [label = "BOURGE\nMaxime"];
+		tgondelle [label = "GONDELLE\nTristan"];
+		ctorres [label = "TORRES\nCorentin"];
+		nmargueritte [label = "MARGUERITTE\nNoé"];
+		mtazi [label = "TAZI\nMay"];
+		cdeleglise [label = "DELEGLISE\nClarisse"];
+		erosse [label = <ROSSE<BR/>ERINE<BR/><I>Respo Com</I>> fillcolor="#f05050" penwidth=4 color="purple"];
+		agengembre [label = "GENGEMBRE\nAgathe"];
+		klandreau [label = "LANDREAU\nKylian"];
+		crault [label = "RAULT\nCamille"];
+		lfrenoi 	[label = <FRENOI<BR/>Lisa<BR/>> penwidth=4 color="purple"];
+		jgueguen	[label = <GUEGUEN<BR/>Jeanne<BR/><I>Respo International</I>> fillcolor="#f05050" penwidth=4 color="purple"]
 	}
+	leelouba -> lfrenoi;
+	felixsign -> emazzoli;
+	titouanle -> aboudet;
+	baptistevae ->jtrouve;
+	pierreanto ->nberthoud;
+	eliotlegr -> mbourge;
+	theomamel -> tgondelle;
+	theomamel -> jgueguen;
+	mateorom ->ctorres;
+	maxchevojo -> nmargueritte;
+	valentinede -> mtazi;
+	lisafaro -> cdeleglise;
+	mathieubla -> erosse;
+	juliedebl ->agengembre;
+	pierreanto -> klandreau;
+	titouanle -> crault;
+	}
+
+
 
 	endnode [style=invis];
 

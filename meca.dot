@@ -465,5 +465,5 @@ digraph meca {
 	endnode [style=invis];
 
 	emmacarp -> endnode [style=invis];
-	"2026" -> endnode [style=invis];
+	"2024" -> endnode [style=invis];
 }

@@ -510,7 +510,7 @@ digraph gba {
     
     { rank="same";
 		xtroulier	[label = "TROULIER\nXavier"];
-		mkson		[label = "KSON\nMarion" penwidth=4 color="purple"];
+		mkson		[label = <KSON<BR/>Marion<BR/><I>Respo Communication</I>> fillcolor="#f05050" penwidth=4 color="purple"];
 		ploiseleur	[label = "LOISELEUR\nPauline"];
 		mfievet		[label = "FIEVET\nMartin"];
 		tcarton		[label = "CARTON\nThéo"];
@@ -519,9 +519,9 @@ digraph gba {
 		ngonzalez	[label = <GONZALEZ<BR/>Nathan<BR/><I>Respo DD/Prev</I>> fillcolor="#f05050" penwidth=4 color="green"];
 		mtrobo		[label = "TROBO\nMay-Linn" penwidth=4 color="purple"];
 		edurand		[label = <DURAND<BR/>Emilie<BR/><I>Pompoms</I>> penwidth=4 color="purple" fillcolor="yellow"];
-		cbellanger	[label = "BELLANGER\nCylia" penwidth=4 color="purple"];
+		cbellanger	[label = <BELLANGER<BR/>Cylia<BR/><I>Respo Clubs</I>> fillcolor="#f05050" penwidth=4 color="purple"];
 		hlorin		[label = "LORIN\nHugo" penwidth=4 color="purple"];
-		charzic		[label = "HARZIC\nClémence"];
+		charzic		[label = <HARZIC<BR/>Clémence<BR/><I>Respo Clubs</I>> fillcolor="#f05050" penwidth=4 color="green"];
 		labravanel	[label = <ABRAVANEL<BR/>Lina<BR/><I>Vice-présidente / Respo International</I>> fillcolor="#f05050" penwidth=4 color="green"];
 		eoukaddour	[label = "OUKADDOUR\nElias"];
 		hdauphin	[label = "DAUPHIN\nHéloïse"];

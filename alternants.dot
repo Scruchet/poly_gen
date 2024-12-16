@@ -19,21 +19,18 @@ digraph alternants {
 		penwidth = 0;
 		color = none;
 		node [shape = none];
-
 		"2021" -> "2022" -> "2023" -> "2024"-> "2025" -> "2026";
 	}
 
 	subgraph cluster_legende {
 		label = "Légende";
 		fillcolor = none;
-
 		leg_parrain	[label = "Parrain"];
 		leg_fillot	[label = "Fillot"];
 		leg_fillotadop	[label = "Fillot Adoptif"];
 		leg_BDE		[label = <Membre BDE<BR/><I>Poste</I>> fillcolor="#f05050"];
 		leg_prez	[label = <Président de club<BR/><I>Club</I>> fillcolor="yellow"];
 		leg_listeux	[label = "Listeux\n\n(Couleur du tour\n = couleur de la liste)" penwidth=4 color="red"];
-
 		leg_parrain -> leg_fillot;
 		leg_parrain -> leg_fillotadop [style = "dashed"];
 	}
@@ -41,7 +38,9 @@ digraph alternants {
 	subgraph cluster_2GU {
 		label = "2GU";
 		fillcolor = "#ada59c";
-		
+		{ rank="same";
+			tes 			[color = "#ada59c" fillcolor = "#ada59c" fontcolor = "#ada59c"];
+		}
 		{ rank="same";
 			alexandregall	[label = "GALLOIS\nAlexandre"];
 			alexandresant	[label = <SANTENS<BR/>Alexandre<BR/><I>PULCE</I>> fillcolor="yellow"];
@@ -56,7 +55,7 @@ digraph alternants {
 			paulrive	[label = <RIVÉ<BR/>Paul<BR/><I>Respo Alternants/Com</I>> fillcolor="#f05050" penwidth=4 color="deeppink"];
 			thomasbrs	[label = "BRS\nThomas"];
 		}
-
+			tes-> thomasbrs [penwidth=2 color = "invis"];
 		{ rank="same";
 			fannybroc	[label = "BROCOT\nFanny"];
 			imanebounou	[label = "BOUNOU\nImane"];
@@ -132,10 +131,11 @@ digraph alternants {
 			loucandyce [label = "FERRAND\nLou-Candyce"];
 			phillippela [label = "LARGUIER\nPhilippe"];
 			leobernae    [label = "BERNAERT\nLéo"];
-			ldebast  [label = "DEBAST\Louison"];
+			ldebast  [label = "DEBAST\nLouison"];
 			azarktouni [label = "ZARKTOUNI\nAchraf"];
+
 		}
-        albinneu -> antoinesim;
+        albinneu -> antoinesim [penwidth=2 color = "#f05050"];
         albinneu -> lilouflo;
         louishetr -> louiskerv;
         louishetr -> julestrip;
@@ -187,89 +187,203 @@ digraph alternants {
 		label = "Prod";
 		fillcolor = "#B2F2EC";
 
-		{ rank = "same";
+		{ rank = "same";//2021
 			maximegrapt	[label = "GRAPTON\nMaxime"];
 		}
 
-		{ rank = "same";
+		{ rank = "same";//2022
 			vianneypon	[label = "PONCET\nVianney"];
 			timothebr   [label = "BROUSSART\nTimothée"];
 		}
 		maximegrapt -> vianneypon;
-		maximegrapt -> elodievan;
+		//maximegrapt -> elodievan;
 		
-		{ rank = "same";
+		{ rank = "same";//2023
 			lisaboue	[label = "BOUE\nLisa"];
 			maximeder   [label = "DERCOURT\nMaxime"];
 		}
 		vianneypon -> lisaboue;
 		timothebr->maximeder;
 
-		{ rank = "same";
+		{ rank = "same";//2024
 			antoinelepr	[label = "LEPRINCE\nAntoine" penwidth=4 color="orange"];
 			hugoleja	[label = "LEJAY\nHugo"];
 			thomasfris [label = "FRISSON\nThomas"];
 			audreycar   [label = "CARON\nAudrey"];
 			ldalby   [label=<DALBY<BR/>Lison<BR/><I>Respo Inté/Event</I>> fillcolor="#f05050" penwidth=4 color="yellow"];
+			mlandemaine	[label = "LANDEMAINE\nMathilde"];
+			tbollengier [label = "BOLLENGIER\nThomas"];
+			rbilly		[label = "BILLY\nRobin"];
+			aantonio	[label = "ANTONIO\nAriclène"];
+			sakaogi		[label = "AKAOGI\nShu"];
+			lvancauwenberghe	[label = "VANCAUWENBERGHE\nLudovic"];
+			esandamba 	[label = "SANDAMBA\nElsie"];
+			gprieur		[label = "PRIEUR\nGabriel"];
+			ypicquet	[label = "PICQUET\nYan"];
+			bdumont		[label = "DUMONT\nBengamin"];
+			gdethune	[label = "DETHUNE\nGregoire"];
+			mdenesker	[label = "DENESKER\nMathis"];
 		}
 		maximeder ->thomasfris;
 		lisaboue -> antoinelepr;
 		lisaboue -> hugoleja;
-		{ rank = "same";
-			antoinele [label = "LEROY \nAntoine"];
-			melinadia [label = "DIAS FERRAZ\nMélina"];
-			thomasliess [label = "LIESS\nThomas"];
-			kylianbroha  [label = "BROHAN\nKylian"];
-			zelielacres  [label = "LACRESSONNIERE\nZélie"];
-			paulinefau [label = <FOUVILLE<BR/>Pauline<BR/><I>Respo Communication</I>> fillcolor="#f05050" penwidth=4 color="pink"];
-		}
-		audreycar -> zelielacres;
-        antoinelepr -> antoinele;
-        ldalby -> melinadia;
-        thomasfris -> thomasliess;
 
-        { rank = "same";
-			invis2 [style=invis];
+		{ rank = "same";//2025
+		    graffard 	[label = "RAFFARD\nGuillaume"];
+			ehecquet 	[label = "HECQUET\nEdhouard"];
+			mrodriguez 	[label = "RODRIGUEZ\nMaxime"];
+			nmanuel  	[label = "MANUEL MENDES\nNuno"];
+			cknu 		[label = "KNU\nChris"];
+			mkisiel  	[label = "KISIEL\nMattéo"];
+			cdubois 	[label = "DUBOIS\nCorentin"];
+			atonneau 	[label = "TONNEAU\nAmélie"];
+			mdemski 	[label = "DEMSKI\nMaxime"];
+			jscellier 	[label = "SCELLIER\nJulian"];
+			cgrezis 	[label = "GREZIS\nCélian"];
+			tvolkamer 	[label = "VOLKAMER\nThomas"];
+			lchancerel 	[label = "CHANCEREL\nLaura"];
+			tlantoine 	[label = "LANTOINE\nThéo"];
+			mlefebvre 	[label = "LEFEBVRE\nMathys"];
+			antoinele 	[label = "LEROY \nAntoine"];
+			melinadia 	[label = "DIAS FERRAZ\nMélina"penwidth=4 color="#2128f5"];
+			thomasliess [label = "LIESS\nThomas"];
+			kylianbroha [label = "BROHAN\nKylian"];
+			zelielacres [label = "LACRESSONNIERE\nZélie"];
+			paulinefau 	[label = <FOUVILLE<BR/>Pauline<BR/><I>Respo Communication</I>> fillcolor="#f05050" penwidth=4 color="pink"];
+			braguin		[label = "RAGUIN\nBertille"];
+			mbenmebarek	[label = "BENMEBAREK\nMohamed"];
+			aletombe	[label = "LETOMBE\nAxel"];
+			mtall		[label = "TALL\nMamoune"];
+			ckonou		[label = "KONOU\nChris"];
+		}
+		mdenesker -> lchancerel;
+		mdenesker -> mrodriguez;
+		gdethune -> jscellier;
+		gdethune -> aolivier;
+		bdumont -> mkisiel;
+		bdumont -> mdemski;
+		ypicquet -> tvolkamer;
+		ypicquet -> ckonou;
+		gprieur -> cdubois;
+		gprieur -> ndelplanque;
+		esandamba -> mtall;
+		lvancauwenberghe -> graffard;
+		sakaogi -> paulinefau;
+		sakaogi -> ehecquet;
+		mlandemaine -> braguin;
+		mlandemaine -> cgrezis;
+		audreycar -> zelielacres;
+		audreycar -> mbenmebarek;aantonio
+        antoinelepr -> antoinele;
+		antoinelepr -> atonneau;
+        ldalby -> melinadia;
+		ldalby -> tlantoine;
+        thomasfris -> thomasliess;
+		thomasfris -> kylianbroha;
+		tbollengier -> mlefebvre;
+		rbilly -> aletombe;
+		aantonio ->  nmanuel;
+
+        { rank = "same";//2026
+			cboukoro 		[label = "BOUKORO\nCliff Borman"];
+			bcagnard 		[label = "CAGNARD\nBrandon"];
+			acampo 			[label = "CAMPOS MAIA\nAlexandre"];
+			jcarville 		[label = "CARVILLE\nJules"];
+			cdeffontaines 	[label = <DEFFONTAINES<BR/>Cyr-Louis<BR/><I>Respo Alternants</I>> fillcolor="#f05050" penwidth=4 color="green"];
+			lerbland 		[label = "ERBLAND\nLouise" penwidth=4 color="purple"];
+			aloonis 		[label = "LOONIS\nAntoine"];
+			ematran 		[label = "MATRAN\nElise"];
+			smechname 		[label = "MECHNAME\nSandra"];
+			csion 			[label =<SION<BR/>Carolie<BR/><I>Gymnase</I>> fillcolor="yellow"];
+			ltherene 		[label = "THERENE\nLoic"];
+			ctourret 		[label = "TOURRET\nConstant"];
+			avasseur 		[label = "VASSEUR\nAlexandre"];
+			bverley 		[label = "VERLEY\nBastien"];
+			ablomme 		[label = "BLOMME\nAlexis"];
+			mntoutoume 		[label = "NTOUTOUME\nMveng"];
+			cguillaume 		[label = "GUILLAUME\nColin"];
+			ndelplanque 	[label = "DELPLANQUE\nNicolas"];
+			aolivier 		[label = "OLIVIER\nAugustin"];
+			
         }
-        zelielacres -> invis2;
+        graffard-> cboukoro;
+		ehecquet -> bcagnard;
+		mrodriguez -> acampo;
+		nmanuel -> jcarville;
+		cknu -> jcarville;
+		mkisiel -> cdeffontaines;
+		paulinefau -> lerbland;
+		cdubois -> aloonis;
+		zelielacres -> ematran;
+		atonneau -> smechname;
+		melinadia -> csion;
+		mdemski -> ltherene;
+		jscellier -> ctourret;
+		cgrezis -> avasseur;
+		thomasliess -> bverley;
+		tvolkamer -> mntoutoume;
+		antoinele -> cguillaume;
+		lchancerel -> ndelplanque;
+		tlantoine -> ndelplanque;
+		mlefebvre -> aolivier;
+		kylianbroha -> ablomme; 
         
 	}
 	subgraph cluster_GC2A {
 		label = "GC2A";
 		fillcolor = "#ff9f43";
 		{ rank = "same";
+			tesss [color = "invis" fillcolor = "invis" fontcolor = "invis"];
+		}
+
+		{ rank = "same";
 			alexpiton	[label = <PITON<BR/>Alex<BR/><I>Respo Alternants</I>> fillcolor="#f05050" penwidth=4 color="blue"];
 		}
+		tesss -> alexpiton [penwidth=4 color="invis"];
 		{ rank = "same";
             quentinmas [label = "MASCRET\nQuentin" penwidth=4 color="white"];
+			
 		}
 		alexpiton->quentinmas;
 
 		{ rank = "same";
 			gaspardgui	[label = <DE FROMONT<BR/>Gaspard<BR/><I>Vice-Président Externe</I>> fillcolor="#f05050" penwidth=4 color="purple"];
+			bchahti		[label = "CHAHTI\nBilal"];
 			
 		}
         quentinmas->gaspardgui;
 		{ rank = "same";
-			mariepetrel	[label = "PETREL\nMarie"];
-			testtt [label = "DE FROMONT\nGaspard",style = "invis"];
+			mariepetrel		[label = "PETREL\nMarie"];
+			testtt 			[label = "DE FROMONT\nGaspard",style = "invis"];
+			vfauquemerque	[label = "FAUQUEMBERQUE\nValentin"];
+			hvanengelandt	[label = "VANENGELANDT\nHugo"];
 		}
-        gaspardgui -> testtt [style = "invis"];
+        //gaspardgui -> testtt [style = "invis"];
+			bchahti ->vfauquemerque;
 		
 		{ rank = "same";
 			sarahbenoit	[label = <BENOIT-VAMBRE<BR/>Sarah<BR/><I>Respo Rézo</I>> fillcolor="#f05050" penwidth=4 color="pink"];
-			manonbato [label = "BATO\nManon"];
+			manonbato 	[label = "BATO\nManon"];
 			valentin	[label = "Valentin"];
+			kroy		[label = "ROY\nJorys"];
+			vdegroote	[label = "DE GROOTE\nValentine"];
+			tclerc		[label = <CLERC<BR/>Théo<BR/><I>Respo Alternants</I>> fillcolor="#f05050" penwidth=4 color="blue"];
+
 		}
 		mariepetrel-> sarahbenoit;
 		gaspardgui -> sarahbenoit;
+		hvanengelandt -> tclerc;
 
 		{ rank = "same";
+			apetitfils  [label = <PETITFILS<BR/>Axel<BR/><I>Respo Goodies/Alternants</I>> fillcolor="#f05050" penwidth=4 color="purple"];
 			alamy		[label = "LAMY\nArthur"];
 			rsalameh	[label = "SALAMEH\nRebecca"];
 			dcocrelle	[label = "COCRELLE\nDorian"];
+			ecagnot		[label = "CAGNOT\nEnora"];
         }
+		apetitfils -> tclerc
         valentin -> dcocrelle;
+		vdegroote -> ecagnot;
 
         }
 
@@ -316,19 +430,19 @@ digraph alternants {
         faridlazou -> elvispet;
         smarolleau -> juliettec;
 
-        { rank = "same";
-			invis3 [style=invis];
-        }
-        juliettec	-> invis3
+        { rank="same";
+			tess 			[color = "#FFE0E0" fillcolor = "#FFE0E0" fontcolor = "#FFE0E0"];
+		}
+		juliettec -> tess  [penwidth=2 color = "invis"];
 	}
 		
 
 
 	endnode [style=invis];
 	
-    invis1 -> endnode [style = invis];
-    invis2 -> endnode [style = invis];
-    invis3 -> endnode [style = invis];
+    //invis1 -> endnode [style = invis];
+    //invis2 -> endnode [style = invis];
+    //invis3 -> endnode [style = invis];
 	dcocrelle -> endnode [style = invis];
 	"2026" -> endnode [style=invis];
 }

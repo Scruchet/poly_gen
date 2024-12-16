@@ -358,7 +358,7 @@ digraph is {
 			mmarthelot  [label = "MARTHELOT\nMathis"];
 			fvantorre   [label = "VANTORRE\nFrançois"];
 			hmathu		[label = "MATHU\nHugo"];
-			dlahanque   [label = "LAHANQUE\nDamien"];
+			dlahanque   [label = <LAHANQUE<BR/>Damien<BR/><I>Respo Goodies/Inté</I>> fillcolor="#f05050" penwidth=4 color="purple"];
 			nailane     [label = "AILANE\nNisrine"];
 			akurudere   [label = "KURUDERE\nAksel"];
 			mbouvier    [label = "BOUVIER\nMateo"];

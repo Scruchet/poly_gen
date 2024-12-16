@@ -329,7 +329,7 @@ digraph mat {
 			camillebec	[label = "BECK\nJuliette"];
 			carolinemont	[label = "MONTEIRO\nCaroline"];
 			inestail	[label = "TAILLIEU\nInès"];
-			islandebub	[label = "BUBULLE\nIslande"];
+			//islandebub	[label = "BUBULLE\nIslande"];
 			jeannedav	[label = "DAVOST\nJeanne"];
 			jeremyversc	[label = "VERSCHOORE\nJeremy"];
 			juliettegrig	[label = "GRIGNON\nJuliette"];
@@ -356,7 +356,7 @@ digraph mat {
 		anaelledemi -> agathedeifl;
 		anaelledemi -> jeremyversc;
 		aniah -> carolinemont;
-		antoinebeg -> islandebub;
+		antoinebeg -> tlecoeuvre;
 		antoinebeg -> marianaeste;
 		antoinedec -> valentindelev;
 		baptistepet -> jeannedav;
@@ -381,7 +381,9 @@ digraph mat {
 		tanguymon -> lucaslbc;
 		teoleg -> aurelienfran;
 		teoleg -> camillebec;
-		{ rank = "same";
+		loicpruv -> qberthod;
+
+		{ rank = "same";//2025
             camillebia 	[label = "BIALLAIS\nCamille"];
             maelbourg  	[label = "BOURGUILLEAU\nMaël"];
             cleomesuet 	[label = <SUET<BR/>Cléome<BR/><I>Trésorière</I>> fillcolor="#f05050" penwidth=4 color="pink"];
@@ -406,15 +408,16 @@ digraph mat {
             tmarcant	[label = "MARCANT\nThibault"];
             ndebsi		[label = "DEBSI\nNour"];
             lschisler	[label = "SCHISLER\nLukas"];
-
 		}
+		
 		remidilli -> cleomesuet;
 		camillebec -> camillebia;
 		arthurgarr -> julielomb;
 		arthurgarr -> olivierch;
 		loanrivere -> jeannedav;
+		matteoandri -> florianma;
 
-		{ rank = "same";
+		{ rank = "same";//2026
 			leabreger  	[label = <<table border="0">
 				<tr><td border="0">BREGER<BR/>Léa</td></tr>
 				<tr><td border="4" color="purple"><I>Respo PeiP</I></td></tr>
@@ -426,7 +429,7 @@ digraph mat {
 			sduchesne	[label = "DUCHESNE\nSam"];
 			cfraysse	[label = "FRAYSSE\nCélia" penwidth=4 color="purple"];
 			aamico		[label = "D'AMICO\nAlexandra"];
-			opellaumail	[label = <PELLAUMAIL<BR/>Oscar<BR/><I>Respo Partenariats/Goodies</I>> fillcolor="#f05050" penwidth=4 color="green"];
+			opellaumail	[label = <PELLAUMAIL<BR/>Oscar<BR/><I>Prev/DD</I>> fillcolor="#f05050" penwidth=4 color="green"];
 			jlemerle	[label = "LEMERLE\nJean"];
 			abrothier	[label = "BROTHIER\nAxel"];
 			iyannic		[label = "YANNIC\nIsaura"];
@@ -445,8 +448,10 @@ digraph mat {
 			eduplouich	[label = "DUPLOUICH\nErwann"];
 			rpiveteau	[label = "PIVETEAU\nRonan"];
 			emackenzie	[label = <MACKENZIE<BR/>Etienne<BR/><I>Vice Président</I>> fillcolor="#f05050" penwidth=4 color="green"];
+			jthierion	[label = <THIERION<BR/>Juliette<BR/><I>Studio</I>> fillcolor="yellow", penwidth=4 color ="blue"];
 			epierron	[label = "PIERRON\nEytan"];
 		}
+		tlecoeuvre  -> jthierion;
 		cleomesuet	-> hmorel;
 		cleomesuet	-> jbrejot;
 		julielomb	-> nlemoine;
@@ -454,6 +459,7 @@ digraph mat {
 		leabreger	-> cfraysse;
 		lhavret 	-> aamico;
 		florianma	-> opellaumail;
+		florianma	-> jlemerle;
 		mmontigny	-> abrothier;
 		sibrir		-> iyannic;
 		cgrosbois	-> iyannic;
