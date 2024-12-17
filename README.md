@@ -1,25 +1,25 @@
 # Polygénéalogie
 
 ## Alternants
-![alternants](alternants.svg "Alternants")
+![alternants](alternants.pdf "Alternants")
 
 ## 2IA
-![2ia](2ia.svg "2IA")
+![2ia](2ia.pdf "2IA")
 
 ## GBA
-![gba](gba.svg "GBA")
+![gba](gba.pdf "GBA")
 
 ## GC
-![gc](gc.svg "GC")
+![gc](gc.pdf "GC")
 
 ## IS
-![is](is.svg "IS")
+![is](is.pdf "IS")
 
 ## Matériaux
-![mat](mat.svg "Matériaux")
+![mat](mat.pdf "Matériaux")
 
 ## Mécanique
-![meca](meca.svg "Méca")
+![meca](meca.pdf "Méca")
 
 ## SE
-![se](se.svg "SE")
+![se](se.pdf "SE")

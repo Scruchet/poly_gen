@@ -151,6 +151,7 @@ digraph is {
 			whillem		[label = "TONGO\nWhillem"];
 			yannisheg	[label = "HEGUY\nYannis" penwidth=4 color="green"];
 			yassinekhed 	[label = "KHEDID\nYassine"];
+			sndiaye		[label = "NDIAYE\nSaliou"];
 		}
 		elliotrougie -> colombinej;
 
@@ -237,7 +238,9 @@ digraph is {
 			vincentre	[label = "RÉAU\nVincent"];
 			wesley		[label = "WASIELEWSKI\nWesley"];
 			yassir		[label = "EL HAMIDI\nYassir"];
+			fthior		[label = "THIOR\nFatou"];
 		}
+		sndiaye -> fthior;
 		achillegel -> nolwenn;
 		achillegel -> ryandeb;
 		alexiaram -> emmalef;
@@ -302,8 +305,8 @@ digraph is {
             yohangaudin     [label = "GAUDIN\nYohan"];
             simonhuaume     [label = "HUAUME\nSimon"];
             margauxlaigl    [label = "LAIGLE\nMargaux"];
-            vincentlemeur   [label = "LE MEUR\nVincent"];
-            arthurmady      [label = "MADY\nArthur"];
+            vincentlemeur   [label = "LE MEUR\nVincent" penwidth=4 color="blue"];
+            arthurmady      [label = "MADY\nArthur" penwidth=4 color="blue"];
             matteomoura     [label = "MOURAO\nMattéo"];
             anasnay         [label = "NAY\nAnas"];
             mathieupall     [label = "PALLATIN\nMathieu"];
@@ -319,6 +322,7 @@ digraph is {
 			mboubacar		[label = "BOUBACAR\nMalika"];
 			mdufresne		[label = "DUFRESNE\nMargaux"];
         }
+		carlabuo -> mboubacar;
         ilyastiou ->akanhanaa;
         tomroq -> florianbos [penwidth=2 color = "#f05050"];
         julescharp -> florianbos [penwidth=2 color = "#f05050"];
@@ -349,22 +353,22 @@ digraph is {
         martindor -> yannpique;
         loliboutil ->yohanndela;
         loliboutil -> scottmcgu;
-	
+		clarabald -> mrousselot; 
 	{ rank="same";
 			irisdepagneu    [label = <DEPAGNEUX<BR/>IRIS<BR/><I>L'Huma</I>> fillcolor="yellow"];
             rfush		[label = "FUSH\nRomy"];
-			sgiraud 	[label = "GIRAUD\nSolène"];
+			sgiraud 	[label = <GIRAUD<BR/>Solène<BR/><I>Régate</I>> fillcolor="yellow" penwidth=4 color="blue"];
 			htassa  	[label = "TASSA\nHiba"];
-			mmarthelot  [label = "MARTHELOT\nMathis"];
+			mmarthelot  [label = <MARTHELOT<BR/>Mathis<BR/><I>Polygames</I>> fillcolor="yellow"];
 			fvantorre   [label = "VANTORRE\nFrançois"];
 			hmathu		[label = "MATHU\nHugo"];
 			dlahanque   [label = <LAHANQUE<BR/>Damien<BR/><I>Respo Goodies/Inté</I>> fillcolor="#f05050" penwidth=4 color="purple"];
 			nailane     [label = "AILANE\nNisrine"];
 			akurudere   [label = "KURUDERE\nAksel"];
-			mbouvier    [label = "BOUVIER\nMateo"];
+			mbouvier    [label = "BOUVIER\nMateo" penwidth=4 color="purple"];
 			llabis		[label = "LABIS\nLeane"];
 			eramili     [label = "RAMILI\nElias"];
-			cbaron 		[label = "BARON\nClément"];
+			cbaron 		[label = <BARON<BR/>Clément<BR/><I>Respo Com</I>> fillcolor="#f05050" penwidth=4 color="green"];
 			irouabah	[label = "ROUABAH\nIslem"];
 			abonnefant	[label = "BONNENFANT\nAntoinin"];
 			rhajjaji	[label = "HAJJAJI\nRayane"];
@@ -378,6 +382,7 @@ digraph is {
 			asoissons   [label = "SOISSONS\nAriinui"];
 			acanal		[label = "CANAL\nAurélien"];
 			ebaranowski [label = "BARANOWSKI\nEléa"];
+			ableton 	[label = <BLETON<BR/>Artus<BR/><I>Respo Part/Goodies</I>> fillcolor="#f05050" penwidth=4 color="green"]
         }
 		vincentlemeur->rfush;
 		vincentlemeur->sgiraud;
