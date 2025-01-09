@@ -48,41 +48,57 @@ digraph meca {
 		{ rank = "same";//2013
 			virginiedeb	[label = "DEBEAUX\nVirginie"];
 			timcorb		[label = "CORBIERE\nTim"];
+			rthielleux	[label = "THIELLEUX\nRomain"];
+			mbridoux	[label = "BRIDOUX\nMaël"];
 		}
 		slyper -> virginiedeb;
 		slyper -> timcorb;
 
 		{ rank = "same";//2014
+			mpham			[label = "PHAM\nMonique"];
+			tlefebvre		[label = <LEFEBVRE<BR/>Thomas<BR/><I>Race</I>> fillcolor="yellow"];
+			jblanchet		[label = "BLANCHET\nJoris"];
 			tlegall			[label = <LE GALL<BR/>Thibault<BR/><I>Vice-Président</I>>  fillcolor="#f05050"];
 			guillaumebulle	[label = "BULLERYAHEN\nGuillaume"];
 			louisalexoli	[label = "OLIVIO\nLouis-Alexandre"];
+			mdietsch		[label = <DIETSCH<BR/>Matthieu<BR/><I>Sono</I>> fillcolor="yellow"];
 		}
+		mbridoux -> jblanchet;
+		rthielleux -> mdietsch;
 		virginiedeb -> guillaumebulle;
 		virginiedeb -> louisalexoli;
 
-		{ rank = "same";
+		{ rank = "same";//2015
+			sweiss		[label = "WEISS\nSimon"];
+			rdelorme	[label = "DELORME\nRomain"];
+			tvanisacker	[label = "VAN-ISAKER\nThomas"];
 			davidanne	[label = "ANNENKOFF\nDavid"];
 			solkemlam	[label = <LAMBERT<BR/>Solkem<BR/><I> </I>>  fillcolor="#f05050"];
 			younesrach	[label = "RACHID\nYounès"];
 			tboucly		[label = "BOUCLY\nThomas"];
 		}
+		mpham -> sweiss;
+		tlefebvre-> rdelorme;
+		mdietsch ->tvanisacker;
 		guillaumebulle -> solkemlam;
 		louisalexoli -> davidanne;
 
 		timcorb -> younesrach;
 
-		{ rank = "same";
-			gflament 		[label = <FLAMENT GLEONEC<BR/>Mathilde<BR/><I>Respo Events</I>>  fillcolor="#f05050"]
+		{ rank = "same";//2016
+			sbrehier		[label = <BREHIER<BR/>Simon<BR/><I> </I>>  fillcolor="#f05050"];
+			gflament 		[label = <FLAMENT GLEONEC<BR/>Mathilde<BR/><I>Respo Events</I>>  fillcolor="#f05050"];
 			eleonorechar	[label = "CHARRIER\nEleonore"];
 			jeremycou		[label = "COUVRAT\nJérémy"];
 			romaincal		[label = "CALLONEC\nRomain"];
 		}
+		sweiss -> sbrehier;
 		tboucly -> gflament;
 		davidanne -> jeremycou;
 		davidanne -> romaincal;
 		solkemlam -> eleonorechar;
 
-		{ rank = "same";
+		{ rank = "same";//2017
 			afrancois	[label = "FRANCOIS\nAlexandre"];
 			deuss		[label = "\nDeuss"];
 			guilhemdum	[label = "DUMONT\nGuilhem"];
@@ -95,10 +111,10 @@ digraph meca {
 		eleonorechar -> deuss;
 		jeremycou -> thibaudlep;
 		romaincal -> guilhemdum;
-
 		younesrach -> mezyan;
 
-		{ rank = "same";
+		{ rank = "same";//2018
+			gaublin		[label = "AUBLIN\nGuillaume"];
 			clemencedev	[label = "DEVIN\nClémence"];
 			elliotabba	[label = "ABBADIE\nEliott"];
 			hajar		[label = "\nHajar"];
@@ -114,7 +130,8 @@ digraph meca {
 		romainvig -> elliotabba;
 		thibaudlep -> louislet;
 
-		{ rank = "same";
+		{ rank = "same";//2019
+			nstrubel	[label = <STRUBEL<BR/>Nicolas<BR/><I>Robotech</I>> fillcolor="#f05050"];
 			aymericnaud	[label = "NAUD\nAymeric"];
 			camille 	[label = "\nCamille"];
 			coluche		[label = "GILLOT\nVictor\na.k.a Coluche"];
@@ -124,7 +141,9 @@ digraph meca {
 			thibaultchar	[label = "CHAREYRON\nThibault"];
 			thomasrey	[label = "REYNAUD\nThomas"];
 			asainpol 	[label = "SAINPOL\nArthur"];
+			mmichaud	[label = "MICHAUD\nMarine"];
 		}
+		gaublin -> nstrubel;
 		clemencedev -> emilienrou;
 		elliotabba -> louismonto;
 		hajar -> camille;
@@ -134,7 +153,8 @@ digraph meca {
 		noemarc -> thibaultchar;
 		simonboy -> thomasrey;
 
-		{ rank = "same";
+		{ rank = "same";//2020
+			agontier	[label = "GONTIER\nAntoine"];
 			arthurbely	[label = "BELY\nArthur"];
 			aurelienlar	[label = "LARÉ\nAurélien"];
 			auriane		[label = "\nAuriane"];
@@ -147,6 +167,7 @@ digraph meca {
 			thibaultgui	[label = "GUILLON\nThibault"];
 			valentinvan	[label = "VANDESQUILLE\nValentin"];
 			blabart		[label = "LABEL\nBenjamin"];
+			mlecluse	[label = "LECLUSE\nMatis"];
 		}
 		aymericnaud -> francishouss;
 		camille -> auriane;
@@ -157,28 +178,24 @@ digraph meca {
 		thibaultchar -> bastiensouf;
 		thomasrey -> etiennead;
 		asainpol -> blabart;
+		mmichaud -> mlecluse;
 
-		{ rank="same";
+		{ rank="same";//2021
 			adriencamp	[label = "CAMPREDON\nAdrien"];
 			alexandregiat	[label = "GIAT\nAlexandre"];
 			antoinebin	[label = "BINAULT\nAntoine"];
 			antoinefont	[label = "FONTAINE\nAntoine" penwidth=4 color="white"];
 			benjamindeniel	[label = "DENIEL\nBenjamin" penwidth=4 color="white"];
 			clemencedum 	[label = "DUMONT\nClémence"];
-			
 			cyprienev	[label = "EVRARD\nCyprien"];
 			enzodel		[label = "DELCROIX\nEnzo" penwidth=4 color="white"];
 			eroann		[label = <SOURICE<BR/>Eroann<BR/><I>Vice-Trésorier</I>> fillcolor="#f05050" penwidth=4 color="deeppink"];
 			julesde		[label = "DÉON\nJules"];
 			juliettebri	[label = "BRIET\nJuliette"];
-
 			lorine 		[label = "ROUQUET\nLorine"];
 			lucasb 		[label = "BOUGERIE\nLucas"];
 			lucasr		[label = "RÉMY\nLucas"];
 			luciensta	[label = "STAELEN\nLucien"];
-			
-			
-
 			paulineverd	[label = "VERDIER\nPauline" penwidth=4 color="white"];
 			quentinterr	[label = "TERRET\nQuentin"];
 			remimach	[label = "MACHARD\nRémi"];
@@ -195,7 +212,9 @@ digraph meca {
 			colinchaise	[label = <CHAISE<BR/>Colin<BR/><I>Inté/Events</I>> fillcolor="#f05050" penwidth=4 color="deeppink"];
 			maxime 		[label = "RONCHETTI\nMaxime"];
             laury		[label = "POUILLET\nLaury"];
+			
 		}
+		mmichaud -> mlecluse;
 		blabart -> maxime;
 		arthurbely -> servin;
 		aurelienlar -> julesde;
@@ -209,8 +228,10 @@ digraph meca {
 		nathanriv -> clemencedum;
 		thibaultgui -> benjamindeniel;
 		valentinvan -> luciensta;
+		baptisteperi -> mlecluse;
 
-		{ rank = "same";
+		{ rank = "same";//2022
+
 			agathe		[label = "\nAgathe"];
 			andreatar	[label = "TARASSI\nAndréa"];
 			antoinefais	[label = <FAISY<BR/>Antoine<BR/><I>Vice-Président Interne</I>> fillcolor="#f05050" penwidth=4 color="purple"];
@@ -249,6 +270,7 @@ digraph meca {
 			violainedup	[label = "DUPENT\nViolaine"];
 			walterbry 	[label = "BRYAN\nWalter"];
 			zeynep		[label = "OZDEMIR\nZeynep"];
+			
 		}
 		adriencamp -> theodehu;
 		adriencamp -> vincentrava;
@@ -290,7 +312,7 @@ digraph meca {
 		vassily -> baptistemol;
 		yassin -> julespasc;
 
-		{ rank = "same";//204
+		{ rank = "same";//2022
 			
 			alicevall	[label = "VALLAT\nAlice"];
 			anthonymott	[label = "MOTTAIS\nAnthony"];

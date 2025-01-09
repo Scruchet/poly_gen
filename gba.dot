@@ -537,7 +537,7 @@ digraph gba {
 		sdissart	[label = "DISSART\nSolène"];
 		lfavrou		[label = "FAVROU\nLaura"];
 		mingabire	[label = "INNGABIRE\nMicky-Yolaine"];
-		samore		[label = "AMORE\nSolène"];
+		samore		[label = <AMORE<BR/>Solène<BR/><I>Rock</I>> fillcolor="yellow"];
 		achaumat	[label = "CHAUMAT\nAntonin"];
 		amonlouis	[label = "MONLOUIS\nAlysée"];
 		cchopin		[label = "CHOPIN\nChloé"];
