@@ -604,8 +604,31 @@ digraph gba {
 				nleroy			[label = "LEROY\nNicolas"];
 				aboterman		[label = "BOTERMAN\nArthur"];
 				}
-
+	maelleherv -> ploiseleur;
+	jademelet -> ploiseleur [style=dashed];
+	xtroulier -> jtoussaint;
+	achaumat -> jtoussaint [style=dashed];
+	cbellanger -> letienne;
+	achaumat -> letienne [style=dashed];
+	labravanel -> lpierson;
+	tcarton -> lmeudic;
+	edurand -> amoy;
+	mkson -> slegesse;
+	sdissart -> ohourdin;
+	lcombasson -> froutier;
+	arolland -> mguichard;
+	amaury -> ecarle;
+	labravanel -> ltronto;
+	mdaguillanes -> mbaey;
+	ploiseleur -> jboisrame;
+	eingelaere -> mduthoit;
+	mfievet -> mdufour;
+	charzic -> abreton;
+	hlorin -> rdufour;
+	kdavignon -> nleroy;
+	brobillard -> aboterman;	
     }
+
 	endnode [style=invis];
 
     mtrobo -> endnode [style = invis];
