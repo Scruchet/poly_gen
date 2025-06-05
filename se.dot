@@ -398,6 +398,7 @@ digraph se {
 				rginer	   [label = <GINER<BR/>Remi<BR/><I>Instru</I>> fillcolor="yellow"];
 				bmoussa	   [label = "MOUSSA\nBilâl"];
 				rboursault [label = "BOURSAULT\nRémi"];
+				sdeparis   [label = "DEPARIS\nSarah"];
 				mcam       [label =<CAM<BR/>Maël<BR/><I>10^5</I>> penwidth=4 color="purple" fillcolor="yellow"];
 				jwacquet   [label = "WACQUET\nJustin"];
 				yberrada   [label = "BERRADA\nYassine"];
@@ -409,9 +410,10 @@ digraph se {
 				adjadja    [label = "DJADJA\nAugustin"];
 				swillekens [label = "WILLEKENS\nSyprien"];
 				azongo	   [label = "ZONGO\nAbdel Buchy"];
-				bcart	   [label = <CART<BR/>Benjamin<BR/><I>Robotech</I>> fillcolor="yellow"];
+				bcart	   [label = <CART<BR/>Benjamin<BR/><I>Robotech</I>> fillcolor="yellow"];	
 				}
 				rcatoir->bcart ;
+				albinmout->bcart [style=dashed];
 				dcassez->pcasimiri;
 				dcassez->ahoudusse;
 				gbura->vpiroux;
@@ -431,16 +433,33 @@ digraph se {
 				abecquet->azongo;
 				julesperr->swillekens;
 				romainpou->swillekens;
+				
 
 	{rank = "same";
-				tdelobelle  [label = "DELOBELLE\nThomas"];
-				apillot [label = "PILLOT\nAnthony"];
-				tduwez	   [label = "DUWEZ\nThibault"];
-				lghazali	   [label = "GHAZALI\nLilia"];
-				
+				apillot 	[label = "PILLOT\nAnthony"];
+				tduwez	   	[label = "DUWEZ\nThibault"];
+				lghazali	[label = <GHAZAHLI<BR/>Lilia<BR/><I>Le Studio</I>> fillcolor="yellow"];
+				tmerien	   	[label = "MERIEN\nTom"];
+				rduhamel  	[label = <DUHAMEL<BR/>Raphaël<BR/><I>DDPS</I>> fillcolor="#f05050" penwidth=4 color="yellow"];
+				tpaumas	   	[label = "PAUMAS\nThibaut"];
+				mhamidouche	[label = "HAMIDOUCHE\nMilane"];
+				boberson  	[label = <OBERSON<BR/>Basil<BR/><I>Secrétaire</I>> fillcolor="#f05050" penwidth=4 color="Orange"];
+				mroy	   	[label = "ROY\nMax"];
+				esorais		[label = "SORAIS\nEric" penwidth=4 color="orange"];
+				cpayet	   [label = <PAYET<BR/>Cédric<BR/><I>Robotech</I>> fillcolor="yellow"];
 				}
-				rcatoir -> bcart ;
+				bcart->tduwez;
+				jwacquet->apillot;
+				vpiroux->lghazali;
+				pcasimiri->tmerien;
+				rginer->rduhamel;
+				mcam->rduhamel;
+				vdetrez->tpaumas;
+				sdeparis->mhamidouche;
+				mcam->boberson;
+				nnait->mroy;
+				bisabelle->esorais;
+				yberrada->cpayet;
 							
     }
-		outil
 }
