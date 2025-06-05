@@ -20,7 +20,7 @@ digraph gba {
 		color = none;
 		node [shape = none];
 
-		"2015" -> "2016" -> "2017" -> "2018" -> "2020" -> "2021" -> "2022" -> "2023" -> "2024" -> "2025" -> "2026";
+		"2015" -> "2016" -> "2017" -> "2018" -> "2020" -> "2021" -> "2022" -> "2023" -> "2024" -> "2025" -> "2026" -> "2027";
 	}
 	
     	subgraph cluster_legende {
@@ -581,6 +581,29 @@ digraph gba {
 	jeanbaptiste-> amonlouis;
 	jeanbaptiste-> cchopin;
 	clemencebou	-> lalglave;
+
+	{rank = "same";
+				ploiseleur  	[label = "LOISELEUR\nPauline"];
+				jtoussaint		[label = "TOUSSAINT\nJacques"];
+				letienne		[label = "ETIENNE\nLéa"];
+				lpierson		[label = "PIERSON\nLéonie"];
+				lmeudic			[label = "MEUDIC\nLucie"];
+				amoy			[label = "MOY\nAnne-Sophie"];
+				slegesse		[label = "LEGESSE\nSalomé"];
+				ohourdin		[label = "HOURDIN\nOcéane"];
+				froutier		[label = "ROUTIER\nFlore"];
+				mguichard		[label = "GUICHARD\nMarion"];
+				ecarle			[label = "CARLE\nEmma"];
+				ltronto			[label = "TRONTO\nLorena"];
+				mbaey			[label = "BAEY\nMathilde"];
+				jboisrame		[label = "BOISRAME\nJulie"];
+				mduthoit		[label = "DUTHOIT\nManon"];
+				mdufour			[label = "DUFOUR\nManon"];
+				abreton			[label = "BRETON\nAliénor"];
+				rdufour			[label = "DUFOUR\nRémy"];
+				nleroy			[label = "LEROY\nNicolas"];
+				aboterman		[label = "BOTERMAN\nArthur"];
+				}
 
     }
 	endnode [style=invis];
