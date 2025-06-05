@@ -586,21 +586,21 @@ digraph gba {
 				ploiseleur  	[label = "LOISELEUR\nPauline"];
 				jtoussaint		[label = "TOUSSAINT\nJacques"];
 				letienne		[label = "ETIENNE\nLéa"];
-				lpierson		[label = "PIERSON\nLéonie"];
+				lpierson		[label = "PIERSON\nLéonie" penwidth=4 color="orange"];
 				lmeudic			[label = "MEUDIC\nLucie"];
-				amoy			[label = "MOY\nAnne-Sophie"];
+				amoy			[label = "MOY\nAnne-Sophie" penwidth=4 color="orange"];
 				slegesse		[label = "LEGESSE\nSalomé"];
 				ohourdin		[label = "HOURDIN\nOcéane"];
 				froutier		[label = "ROUTIER\nFlore"];
-				mguichard		[label = "GUICHARD\nMarion"];
+				mguichard		[label = <GUICHARD<BR/>Marion<BR/><I>Vice Présidente / Respo Rézo</I>> fillcolor="#f05050" penwidth=4 color="yellow"];
 				ecarle			[label = "CARLE\nEmma"];
 				ltronto			[label = "TRONTO\nLorena"];
 				mbaey			[label = "BAEY\nMathilde"];
-				jboisrame		[label = "BOISRAME\nJulie"];
+				jboisrame		[label = <BOISRAME<BR/>Julie<BR/><I>Respo Club</I>> fillcolor="#f05050" penwidth=4 color="yellow"];
 				mduthoit		[label = "DUTHOIT\nManon"];
 				mdufour			[label = "DUFOUR\nManon"];
 				abreton			[label = "BRETON\nAliénor"];
-				rdufour			[label = "DUFOUR\nRémy"];
+				rdufour			[label = <DUFOUR<BR/>Rémy<BR/><I>Respo Club</I>> fillcolor="#f05050" penwidth=4 color="yellow"];
 				nleroy			[label = "LEROY\nNicolas"];
 				aboterman		[label = "BOTERMAN\nArthur"];
 				}
