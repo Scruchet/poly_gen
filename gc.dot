@@ -328,8 +328,6 @@ digraph gc {
 
 		}
 		jyang -> basmabouta;
-		arthurbonif -> testb [style = invis];
-		arthurbonif -> testa [style = invis];
 		adamvascon -> tanguydela;
 		adjouaayik->juliedebl;
 		adrienschne->jarodsk;
@@ -426,6 +424,7 @@ digraph gc {
 	}
 	dekandi -> mmadjile;
 	mbourge -> zloeb;
+	agengembre -> zloeb;
 	nberthoud -> toliveau;
 	crault -> mribault;
 	jgueguen -> mribault;
