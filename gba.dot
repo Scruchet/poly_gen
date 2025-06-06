@@ -511,7 +511,6 @@ digraph gba {
     { rank="same";
 		xtroulier	[label = "TROULIER\nXavier"];
 		mkson		[label = <KSON<BR/>Marion<BR/><I>Respo Communication</I>> fillcolor="#f05050" penwidth=4 color="purple"];
-		ploiseleur	[label = "LOISELEUR\nPauline"];
 		mfievet		[label = "FIEVET\nMartin"];
 		tcarton		[label = "CARTON\nThéo"];
 		amaury		[label = <MAURY<BR/>Amandine<BR/><I>Secrétaire</I>> fillcolor="#f05050" penwidth=4 color="green"];
@@ -545,7 +544,6 @@ digraph gba {
 	}
 	lenamar 	-> xtroulier;
 	chloepot 	-> mkson;
-	mhrlleherv	-> ploiseleur;
 	justinerobi -> mfievet;
 	trystanmar	-> tcarton;
 	antoninvau 	-> amaury;
@@ -583,7 +581,7 @@ digraph gba {
 	clemencebou	-> lalglave;
 
 	{rank = "same";
-				ploiseleur  	[label = "LOISELEUR\nPauline"];
+				ploiseleur	[label = "LOISELEUR\nPauline"];
 				jtoussaint		[label = "TOUSSAINT\nJacques"];
 				letienne		[label = "ETIENNE\nLéa"];
 				lpierson		[label = "PIERSON\nLéonie" penwidth=4 color="orange"];
@@ -631,6 +629,6 @@ digraph gba {
 
 	endnode [style=invis];
 
-    mtrobo -> endnode [style = invis];
-	"2026" -> endnode [style=invis];
+    ploiseleur -> endnode [style = invis];
+	"2027" -> endnode [style=invis];
 }
