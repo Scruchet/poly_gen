@@ -129,6 +129,8 @@ digraph iia {
 			jcratz		[label =<CRATZ<BR/>Justine<BR/><I>PULCE</I>> fillcolor="yellow"];
 			clalance	[label = "LALANE\nCandice"];
 			gsibille 	[label = "SIBILLE\nGuillaume"];
+			amoraux		[label = "MORAUX\nAnthoni"];
+			dwavrin		[label = "WAVRIN\nDorian"];
 
 		}
 			theoborel ->rchalabi
@@ -142,16 +144,15 @@ digraph iia {
 		//portalSE -> romainorp [style=dashed penwidth=2 color="#f05050"];
 
 		{ rank="same";
-			mpoissonet 		[label = <POISSONET<BR/>Mathys<I>PULCE</I>> fillcolor="yellow"];
-			hadell 	   		[label = <ADELL de ORtELLS<BR/>Hugo<BR/><I>Vice Président</I>> fillcolor="#f05050" penwidth=4 color="yellow"];
+			mpoissonet 		[label = <POISSONET<BR/>Mathys<BR/><I>PULCE</I>> fillcolor="yellow"];
+			hadell 	   		[label = <ADELL DE ORTELLS<BR/>Hugo<BR/><I>Vice Président</I>> fillcolor="#f05050" penwidth=4 color="yellow"];
 			icaron 			[label = <CARON<BR/>Iona<BR/>>  penwidth=4 color="orange"];
 			cdoucement 		[label = <DOUCEMENT<BR/>Coline<BR/>> penwidth=4 color="orange"];
 			nsantos			[label =<SANTOS<BR/>Nylan<BR/><I>Respo Comm</I>> fillcolor="#f05050" penwidth=4 color="yellow"];
 		}
-		//Mathys -> mpoissonet;
-		// Mathys -> mpoissonet [style=dashed];
+		amoraux -> mpoissonet;
+		dwavrin -> mpoissonet [style=dashed];
 		tlebrun -> hadell;
-		//hugo -> hadell [style=dashed];
 		jcratz -> icaron;
 		asenez -> cdoucement;
 		tlebrun -> nsantos;
@@ -160,6 +161,6 @@ digraph iia {
 
 	endnode [style=invis];
 
-	hadell -> endnode [style=invis];
+	mpoissonet -> endnode [style=invis];
 	"2027" -> endnode [style=invis];
 }
