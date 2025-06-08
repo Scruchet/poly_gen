@@ -458,8 +458,9 @@ digraph se {
 				sdeparis->mhamidouche;
 				mcam->boberson;
 				nnait->mroy;
-				bisabelle->esorais;
 				yberrada->cpayet;
+				bisabelle->esorais;
+				
 							
     }
 }
