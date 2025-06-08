@@ -19,7 +19,7 @@ digraph alternants {
 		penwidth = 0;
 		color = none;
 		node [shape = none];
-		"2021" -> "2022" -> "2023" -> "2024"-> "2025" -> "2026";
+		"2021" -> "2022" -> "2023" -> "2024"-> "2025" -> "2026" -> "2027";
 	}
 
 	subgraph cluster_legende {
@@ -328,6 +328,26 @@ digraph alternants {
 		mlefebvre -> aolivier;
 		kylianbroha -> ablomme; 
         
+	{ rank = "same";//2027
+		opatissier			[label = "PATISSIER\nOthilie"];
+		rfuchs                          [label = "FUCHS\nRomy"];
+		eandouche			[label = "ANDOUCHE\nEtienne"];
+		tcami				[label = "CAMI\nThomas"];
+		mthys				[label = "THYS\nMaximilien"];
+		pgeorgelin			[label = <GEORGELIN<BR/>Paul<BR/><I>Trésorier</I>> fillcolor="#f05050" penwidth=4 color="yellow"];
+		btom				[label = "BRIOLAT\nTom"];
+		gtom				[label = "GRATTEPANCHE\nTom"];
+	}
+	csion -> opatissier;
+	cdeffontaines -> rfuchs;
+	lerbland -> eandouche;
+	jcarvilles -> tcami;
+	cdeffontaines -> mthys;
+	cdeffontaines -> pgeorgelin;
+	jcarville -> btom;
+	jcarville -> gtom;
+
+
 	}
 	subgraph cluster_GC2A {
 		label = "GC2A";
