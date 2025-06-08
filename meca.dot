@@ -386,7 +386,7 @@ digraph meca {
 			charliefass [label = "FASSENET\nCharlie"];
 			clementchw  [label = "CHWALIK\nClément"];
 			claracarp   [label = "CARPENTIER\nClara"];
-			clovischar  [label = "CHARRIER\nClovis" penwidth=4 color="blue"];
+			clovischar  [label = <CLOVIS<BR/>CHARRIER<BR/><I>Robotech</I>> fillcolor="yellow" penwidth=4 color="blue"];
 			eliotpott   [label = "POTTIER\nEliot"];
 			emilemaur   [label = "MAURIN-BONINI\nEmile"];
 			guilhemdbn  [label = "DEBAIN\nGuilhem"];
