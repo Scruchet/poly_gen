@@ -421,10 +421,35 @@ digraph alternants {
 			rsalameh	[label = "SALAMEH\nRebecca"];
 			dcocrelle	[label = "COCRELLE\nDorian"];
 			ecagnot		[label = "CAGNOT\nEnora"];
+			mfarenea	[label = "FARENEAU\nMathis"];
+			lpocholl	[label = "POCHOLE\nLucas"];
         }
-		apetitfils -> tclerc
+		tclerc -> apetitfils;
         valentin -> dcocrelle;
 		vdegroote -> ecagnot;
+
+		{ rank = "same";//2027
+			epietin 	 [label = <PIETIN<BR/>Ethan<BR/><I>Humaniterre</I>> fillcolor="yellow"];
+			imajkrza  	[label = <MAJKRZAK<BR/>Inès<BR/><I>Communication</I>> fillcolor="#f05050" penwidth=4 color="yellow"];
+			achapat  	[label = <CHAPAT<BR/>Alice<BR/><I>Bar</I>> fillcolor="yellow"];
+			slokoto		[label = "LOKOTO\nSamuel"];
+			jmarches	[label = "MARCHESI\nJustine "];
+			bdenoual	[label = <DENOUAL<BR/>Benjamin<BR/><I>Jeanben LAFRITE<BR/>Inté Events</I>> fillcolor="#f05050" penwidth=4 color="yellow"];
+			aaauilo		[label = "AAUILO\nAxel"];
+			pprudor		[label = "PRUDOR\nPaul-Alexandre"];
+			hmartin		[label = "MARTIN\nHermine"];
+			llemonni	[label = "LEMONNIER Louis"];
+        }
+		apetitfils -> epietin;
+        lpocholl -> imajkrza;
+		alamy -> achapat;
+		ecagnot -> slokoto;
+		dcocrelle -> jmarches;
+		apetitfils -> bdenoual;
+		rsalameh -> aaauilo;
+		mfarenea -> pprudor;
+		ecagnot -> hmartin;
+		mfarenea -> llemonni [style = "dashed"];
 
     }
 
