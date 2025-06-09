@@ -14,28 +14,8 @@ digraph se {
 
 	rankdir = LR;
 
-	subgraph cluster_promos {
-		label = "Promos";
-		penwidth = 0;
-		color = none;
-		node [shape = none];
 
-		"2017" -> "2018" -> "2020" -> "2021" -> "2022" -> "2023" -> "2024" -> "2025" -> "2026" -> "2027";
-	}
-    subgraph cluster_legende {
-		label = "Légende";
-		fillcolor = none;
 
-		leg_parrain	[label = "Parrain"];
-		leg_fillot	[label = "Fillot"];
-		leg_fillotadop	[label = "Fillot Adoptif"];
-		leg_BDE		[label = <Membre BDE<BR/><I>Poste</I>> fillcolor="#f05050"];
-		leg_prez	[label = <Président de club<BR/><I>Club</I>> fillcolor="yellow"];
-		leg_listeux	[label = "Listeux\n\n(Couleur du tour\n = couleur de la liste)" penwidth=4 color="red"];
-
-		leg_parrain -> leg_fillot;
-		leg_parrain -> leg_fillotadop [style = "dashed"];
-	}
 
 	subgraph cluster_SE {
 		label = "SE";
@@ -392,7 +372,6 @@ digraph se {
                 
     {rank = "same";
 				pcasimiri  [label = "CASIMIRI\nPierre"];
-				ahoudusse  [label = "HOUDUSSE\nAgathe"];
 				vpiroux	   [label = "PIROUX\nValentin"];
 				nnait	   [label = "NAIT-SEGHIR\nNaël"];
 				rginer	   [label = <GINER<BR/>Remi<BR/><I>Instru</I>> fillcolor="yellow"];
@@ -405,7 +384,7 @@ digraph se {
 				vdetrez    [label = "DETREZ\nVictorien"];
 				rbohdan    [label = "BOHDAN-ZAJAC\nRoman"];
 				bisabelle  [label = "BAVUGILIJE\nIsabelle" penwidth=4 color="purple"];
-				akerhasco  [label = <KERHASCOËT<BR/>Arthur<BR/><I>Respo Inté/Events</I>> fillcolor="#f05050" penwidth=4 color="green"];
+				akerhasco  [label = <KERHASCOËT<BR/>Arthur<BR/><I>Respo Inté/Events</I>> fillcolor="#f05050" penwidth=4 color="green"]; // il a redoublé mais ça fout la merde si je le mets sur la bonne année
 				itepeli    [label = "TEPELI\nIbrahim"];
 				adjadja    [label = "DJADJA\nAugustin"];
 				swillekens [label = "WILLEKENS\nSyprien"];
@@ -415,7 +394,6 @@ digraph se {
 				rcatoir->bcart ;
 				albinmout->bcart [style=dashed];
 				dcassez->pcasimiri;
-				dcassez->ahoudusse;
 				gbura->vpiroux;
 				rcatoir->nnait;
 				dbenaissa->rginer;
@@ -437,6 +415,7 @@ digraph se {
 
 	{rank = "same";
 				apillot 	[label = "PILLOT\nAnthony"];
+				ahoudusse  [label = "HOUDUSSE\nAgathe"];
 				tduwez	   	[label = "DUWEZ\nThibault"];
 				lghazali	[label = <GHAZAHLI<BR/>Lilia<BR/><I>Le Studio</I>> fillcolor="yellow"];
 				tmerien	   	[label = "MERIEN\nTom"];
@@ -450,6 +429,7 @@ digraph se {
 				}
 				bcart->tduwez;
 				jwacquet->apillot;
+				dcassez->ahoudusse;
 				vpiroux->lghazali;
 				pcasimiri->tmerien;
 				rginer->rduhamel;
@@ -463,4 +443,95 @@ digraph se {
 				
 							
     }
+    subgraph cluster_SE2A {
+		label = "SE2A";
+		fillcolor = "#FFE0E0";
+		{ rank = "same";//2017
+			blank1 [color = "#FFE0E0" fillcolor = "#FFE0E0" fontcolor = "#FFE0E0"]; // les BLANK servent à mettre en forme le graphique sinon tout est décalé
+		}
+		{ rank = "same";//2018
+			blank2 [color = "#FFE0E0" fillcolor = "#FFE0E0" fontcolor = "#FFE0E0"];
+		}
+		blank1->blank2[penwidth=2 color = "invis"];
+		{ rank = "same";//2020
+			blank3 [color = "#FFE0E0" fillcolor = "#FFE0E0" fontcolor = "#FFE0E0"];
+		}
+		blank2->blank3[penwidth=2 color = "invis"];
+		{ rank = "same";//2021
+			bertillesor	[label = <SORIN<BR/>Bertille<BR/><I>Respo Com</I>> fillcolor="#f05050" penwidth=4 color = "blue"];
+			guillaumeherb	[label = "HERBOMEL\nGuillaume"];
+			nathancoulon	[label = "COULON\nNathan"];
+		}
+		blank3 -> bertillesor[penwidth=2 color = "invis"];
+
+		{ rank = "same";//2022
+			leavicio	[label = "VICIOT\nLéa"];
+			nicolaserc	[label = "ERCEAU\nNicolas"];
+			thomasobl	[label = <OBLED<BR/>Thomas<BR/><I>Partenariats/Goodies</I>> fillcolor="#f05050" penwidth=4 color="deeppink"];
+		}
+		bertillesor -> thomasobl [penwidth=2 color = "#f05050"];
+		guillaumeherb -> leavicio;
+		nathancoulon -> nicolaserc;
+
+		{ rank = "same";//2023
+			tombiot		[label="BIOT\nTom"];
+			adjonard		[label="JONARD\nAdrien"];
+			antoninm     [label = "MACE\nAntonin"];
+		}
+		thomasobl -> tombiot [style=dashed];
+		thomasobl -> adjonard;
+
+		{ rank = "same";//2024
+			remideteve	[label=<Detève<BR/>Rémi<BR/><I>Vice-Président Externe</I>> fillcolor="#f05050" penwidth=4 color="yellow"];
+			martinserg	[label=<Sergeant<BR/>Martin<BR/><I>Respo Alternants</I>> fillcolor="#f05050" penwidth=4 color="yellow"];
+			smarolleau	[label = "MAROLLEAU\nSimon"];
+			faridlazou  [label ="LAZOUACHE\nFarid"];
+		}
+		tombiot -> remideteve;
+		adjonard-> smarolleau;
+		antoninm -> faridlazou;
+
+		{ rank = "same";//2025
+			elvispet [label = "PEETERMANS\nElvis"];
+			juliettec [label ="CHEVALIER\nJuliette"];
+		}
+        faridlazou -> elvispet;
+        smarolleau -> juliettec;
+
+        { rank="same";//2026
+			tess 			[color = "#FFE0E0" fillcolor = "#FFE0E0" fontcolor = "#FFE0E0"];
+// 			akerhasco  [label = <KERHASCOËT<BR/>Arthur<BR/><I>Respo Inté/Events</I><BR/>SE> fillcolor="#f05050" penwidth=4 color="green"];
+		}
+		juliettec -> tess  [penwidth=2 color = "invis"];
+
+ 		{ rank="same";//2027
+ 			hzekri	[label ="ZEKRI\nHossam"];
+ 			rponche [label ="PONCHE\nRomain"];
+ 		}
+ 		akerhasco -> hzekri;
+ 		jwacquet ->  rponche [style = "dashed"];
+ 		tess -> hzekri [penwidth=2 color = "invis"];
+	}
+	subgraph cluster_promos {
+		label = "Promos";
+		penwidth = 0;
+		color = none;
+		node [shape = none];
+
+		"2017" -> "2018" -> "2020" -> "2021" -> "2022" -> "2023" -> "2024" -> "2025" -> "2026" -> "2027";
+	}
+	 subgraph cluster_legende {
+		label = "Légende";
+		fillcolor = none;
+
+		leg_parrain	[label = "Parrain"];
+		leg_fillot	[label = "Fillot"];
+		leg_fillotadop	[label = "Fillot Adoptif"];
+		leg_BDE		[label = <Membre BDE<BR/><I>Poste</I>> fillcolor="#f05050"];
+		leg_prez	[label = <Président de club<BR/><I>Club</I>> fillcolor="yellow"];
+		leg_listeux	[label = "Listeux\n\n(Couleur du tour\n = couleur de la liste)" penwidth=4 color="red"];
+
+		leg_parrain -> leg_fillot;
+		leg_parrain -> leg_fillotadop [style = "dashed"];
+	}
 }
