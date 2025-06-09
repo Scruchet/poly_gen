@@ -19,7 +19,7 @@ digraph se {
 
 	subgraph cluster_SE {
 		label = "SE";
-		fillcolor = "#FFE0E0";
+		fillcolor = "#F89A9A";
 
 		{ rank = "same";
 			valentinbeau	[label = "BEAUCHAMP\nValentin"];
@@ -445,16 +445,16 @@ digraph se {
     }
     subgraph cluster_SE2A {
 		label = "SE2A";
-		fillcolor = "#FFE0E0";
+		fillcolor = "#F6B0B0";
 		{ rank = "same";//2017
-			blank1 [color = "#FFE0E0" fillcolor = "#FFE0E0" fontcolor = "#FFE0E0"]; // les BLANK servent à mettre en forme le graphique sinon tout est décalé
+			blank1 [color = "#F6B0B0" fillcolor = "#F6B0B0" fontcolor = "#F6B0B0"]; // les BLANK servent à mettre en forme le graphique sinon tout est décalé
 		}
 		{ rank = "same";//2018
-			blank2 [color = "#FFE0E0" fillcolor = "#FFE0E0" fontcolor = "#FFE0E0"];
+			blank2 [color = "#F6B0B0" fillcolor = "#F6B0B0" fontcolor = "#F6B0B0"];
 		}
 		blank1->blank2[penwidth=2 color = "invis"];
 		{ rank = "same";//2020
-			blank3 [color = "#FFE0E0" fillcolor = "#FFE0E0" fontcolor = "#FFE0E0"];
+			blank3 [color = "#F6B0B0" fillcolor = "#F6B0B0" fontcolor = "#F6B0B0"];
 		}
 		blank2->blank3[penwidth=2 color = "invis"];
 		{ rank = "same";//2021
@@ -499,7 +499,7 @@ digraph se {
         smarolleau -> juliettec;
 
         { rank="same";//2026
-			tess 			[color = "#FFE0E0" fillcolor = "#FFE0E0" fontcolor = "#FFE0E0"];
+			tess 			[color = "#F6B0B0" fillcolor = "#F6B0B0" fontcolor = "#F6B0B0"];
 // 			akerhasco  [label = <KERHASCOËT<BR/>Arthur<BR/><I>Respo Inté/Events</I><BR/>SE> fillcolor="#f05050" penwidth=4 color="green"];
 		}
 		juliettec -> tess  [penwidth=2 color = "invis"];
