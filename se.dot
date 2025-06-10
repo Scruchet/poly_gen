@@ -279,27 +279,8 @@ digraph se {
 		//remi -> portal2IA [style="dashed" penwidth=2 color="#f05050"];
 	
     { rank = "same";
-                adriencont	[label = <GONTIER<BR/>Adrien<BR/><I>10^5(2022)</I>> fillcolor="yellow"];
-                julesperr	[label = "PERRIER\nJules" penwidth=4 color="yellow"];
-                judith		[label = "JAULIN\nJudith" penwidth=4 color="orange"];
-                raissandri	[label = "ANDRIANIRINTSOA\nHeriniaina Raïssa";]
-                alexandre 	[label = "BRASSEUR\nAlexandre"];
-                abecquet	[label = "BECQUET\nAmaury"];
-                dbenaissa	[label = "BENAISSA\nDjibril"];
-                cboulard	[label = "BOULARD\nClément"];
-                gbura	[label = "BURA\nGuillaume" penwidth=4 color="#2128f5"];
-                ccariat	[label = "CARIAT\nCamille"];
-                dcassez	[label =<CASSEZ<BR/>Donovan<BR/><I>Circotech</I>> fillcolor="yellow"];
-                rcatoir		[label = "CATOIR\nRémi"];
-                ncazin	[label = "CAZIN\nNémo"];
-                acegarra	[label = "CEGARRA\nAntoine"];
-                mchauveliere		[label = "CHAUVELIERE\nMartin"];
-                scruchet	[label = "CRUCHET\nSimon"];
-                lderyckere	[label = "DERYCKERE\nLouis" penwidth=4 color="#2128f5"];
-                rduhr		[label = "DUHR\nRomain"];
-                tduyck		[label = "DUYCK\nThibault"];
-                lgambart	[label = "GAMBART\nLouis"];
-                imlika 	[label = "MLIKA\nImen"];adriencont	[label = <GONTIER<BR/>Adrien<BR/><I>10^5(2022)</I>> fillcolor="yellow"];
+                
+				adriencont	[label = <GONTIER<BR/>Adrien<BR/><I>10^5(2022)</I>> fillcolor="yellow"];
                 julesperr	[label = "PERRIER\nJules" penwidth=4 color="yellow"];
                 judith		[label = "JAULIN\nJudith" penwidth=4 color="orange"];
                 raissandri	[label = "ANDRIANIRINTSOA\nHeriniaina Raïssa";]
@@ -333,7 +314,7 @@ digraph se {
                 ymoslah	[label = "MOSLAH\nYasmine"];
                 hzrouki	[label = "ZROUKI\nHamza"];
             }
-                louise -> julesperr [penwidth=2 color = "#f05050"];
+                louise -> julesperr;
                 janet -> judith;
                 victor -> adriencont;
                 baptisteblack -> alexandre;
