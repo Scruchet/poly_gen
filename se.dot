@@ -507,9 +507,11 @@ digraph se {
  		{ rank="same";//2027
  			hzekri	[label ="ZEKRI\nHossam"];
  			rponche [label ="PONCHE\nRomain"];
+ 			lbusiere	[label ="BUSIERE\nLouis"];
  		}
- 		akerhasco -> hzekri;
+ 		akerhasco -> hzekri [style = "dashed"];
  		jwacquet ->  rponche [style = "dashed"];
+ 		pcasimiri -> lbusiere [style = "dashed"];
  		tess -> hzekri [penwidth=2 color = "invis"];
 	}
 	subgraph cluster_promos {
