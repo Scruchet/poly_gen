@@ -192,7 +192,7 @@ digraph alternants {
 		egautier->aacunapi;
 		egautier->jtrichar;
 		pbreuvar->pledoeuf;
-		cansel->onedey;
+		pledoeuf->onedey;
 		mgabard->mdelarue;
 		lcoelho->lsaboy;
 		vwijsman->lnoblanc;
