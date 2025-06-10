@@ -320,7 +320,7 @@ digraph gc {
 		adrienschne->jarodsk;
 		antoinevass->antoinebul;
 		arseneblaz->hectorseg;
-		arthurbonif->lisafaro;
+		arthurbonif->lisafaro [penwidth=2 color = "#f05050"];
 		bastienbert->tonyphaly;
 		camillebusn->leelouba;
 		clementdup->arthurrena;
@@ -336,7 +336,7 @@ digraph gc {
 		jeremybel->raphaelma;
 		josiaskou -> jenniferel;
 		josiaskou -> yanndemass;
-		julie -> mateorom;
+		julie -> mateorom [penwidth=2 color = "#f05050"];
 		lucasbordet -> hugosantos;
         lucascohu -> adamderno;
         marieperren -> maxchevojo;
@@ -392,10 +392,11 @@ digraph gc {
 	maxchevojo -> nmargueritte;
 	valentinede -> mtazi;
 	lisafaro -> cdeleglise;
-	mathieubla -> erosse;
+	mathieubla -> erosse [penwidth=2 color = "#f05050"];
 	juliedebl ->agengembre;
 	pierreanto -> klandreau;
-	titouanle -> crault;
+	titouanle -> crault [penwidth=2 color = "#f05050"];
+	
 	{ rank = "same";//2027
 		mmadjile  [label = "MADJILE BEIDI\nManuella"];
 		mribault  [label = <RIBAULT<BR/>Martin<BR/><I>Président</I>> fillcolor="#f05050" penwidth=4 color="yellow"];
@@ -413,8 +414,8 @@ digraph gc {
 	mbourge -> zloeb;
 	agengembre -> zloeb;
 	nberthoud -> toliveau;
-	crault -> mribault;
-	jgueguen -> mribault;
+	crault -> mribault [penwidth=2 color = "#f05050"];
+	jgueguen -> mribault [penwidth=2 color = "#f05050"];
 	theomamel -> mpayet;
 	lfrenoi -> mblanche;
 	emazzoli -> mblanche [style = "dashed"];
@@ -492,7 +493,7 @@ digraph gc {
 
 		}
 		mariepetrel-> sarahbenoit;
-		gaspardgui -> sarahbenoit;
+		gaspardgui -> sarahbenoit [penwidth=2 color = "#f05050"];
 		hvanengelandt -> tclerc;
 
 		{ rank = "same";
@@ -505,7 +506,7 @@ digraph gc {
 			lpocholl	[label = "POCHOLE\nLucas"];
 
         }
-		tclerc -> apetitfils;
+		tclerc -> apetitfils [penwidth=2 color = "#f05050"];
         valentin -> dcocrelle;
 		vdegroote -> ecagnot;
 		lpocholl -> zloeb;
@@ -526,7 +527,7 @@ digraph gc {
 		alamy -> achapat;
 		ecagnot -> slokoto;
 		dcocrelle -> jmarches;
-		apetitfils -> bdenoual;
+		apetitfils -> bdenoual [penwidth=2 color = "#f05050"];
 		rsalameh -> aaauilo;
 		mfarenea -> pprudor;
 		ecagnot -> hmartin;
