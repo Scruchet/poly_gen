@@ -96,9 +96,9 @@ digraph iia {
 
 		}
 		elboulac -> kbouguetaia;
-		evapicrou -> chloenico;
+		evapicrou -> chloenico [penwidth=2 color = "#f05050"];
 		evapicrou -> didieraud;
-		smitty -> chloenico;
+		smitty -> chloenico [penwidth=2 color = "#f05050"];
 		smitty -> emilebct;
 		
 		{ rank="same";
@@ -113,7 +113,7 @@ digraph iia {
 			gabrielbr  [label = <BREMARD<BR/>Gabriel<BR/><I>Respo Goodies</I>> fillcolor="#f05050" penwidth=4 color="#2128f5"];
 		}
 		romainorp -> corentinec;
-		romainorp -> theoborel;
+		romainorp -> theoborel [penwidth=2 color = "#f05050"];
 		emilebct -> constancep;
 		emilebct -> raphaelcle;
 		emilebct -> emmariot;
@@ -135,9 +135,9 @@ digraph iia {
 		}
 			theoborel ->rchalabi
 			raphaelcle->amelin;
-			ldumenil->asenez;
+			ldumenil->asenez [penwidth=2 color = "#f05050"];
 			ldumenil->clalance;
-			gabrielbr->tlebrun;
+			gabrielbr->tlebrun [penwidth=2 color = "#f05050"];
 			gabrielbr->gsibille;
 			emmariot->jcratz;
 		
@@ -152,10 +152,10 @@ digraph iia {
 		}
 		amoraux -> mpoissonet;
 		dwavrin -> mpoissonet [style=dashed];
-		tlebrun -> hadell;
+		tlebrun -> hadell [penwidth=2 color = "#f05050"];
 		jcratz -> icaron;
 		asenez -> cdoucement;
-		tlebrun -> nsantos;
+		tlebrun -> nsantos [penwidth=2 color = "#f05050"];
 		
 	}
 
