@@ -383,7 +383,6 @@ digraph se {
 				yberrada   [label = "BERRADA\nYassine"];
 				vdetrez    [label = "DETREZ\nVictorien"];
 				rbohdan    [label = "BOHDAN-ZAJAC\nRoman"];
-				bisabelle  [label = "BAVUGILIJE\nIsabelle" penwidth=4 color="purple"];
 				akerhasco  [label = <KERHASCOËT<BR/>Arthur<BR/><I>Respo Inté/Events</I>> fillcolor="#f05050" penwidth=4 color="green"]; // il a redoublé mais ça fout la merde si je le mets sur la bonne année
 				itepeli    [label = "TEPELI\nIbrahim"];
 				adjadja    [label = "DJADJA\nAugustin"];
@@ -425,7 +424,10 @@ digraph se {
 				boberson  	[label = <OBERSON<BR/>Basil<BR/><I>Secrétaire</I>> fillcolor="#f05050" penwidth=4 color="Orange"];
 				mroy	   	[label = "ROY\nMax"];
 				esorais		[label = "SORAIS\nEric" penwidth=4 color="orange"];
-				cpayet	   [label = <PAYET<BR/>Cédric<BR/><I>Robotech</I>> fillcolor="yellow"];
+				cpayet	    [label = <PAYET<BR/>Cédric<BR/><I>Robotech</I>> fillcolor="yellow"];
+				bisabelle   [label = <BAVUGILIJE<BR/>Isabelle<BR/><I>Polydance</I>> fillcolor="yellow" penwidth=4 color="purple"];
+				cbaron 		[label = <BARON<BR/>Clément<BR/><I>Sono</I>> fillcolor="yellow"];
+				znazi		[label = "NACINOVICH\nZacharie"];
 				}
 				bcart->tduwez;
 				jwacquet->apillot;
@@ -507,9 +509,11 @@ digraph se {
  		{ rank="same";//2027
  			hzekri	[label ="ZEKRI\nHossam"];
  			rponche [label ="PONCHE\nRomain"];
+ 			lbusiere	[label ="BUSIERE\nLouis"];
  		}
- 		akerhasco -> hzekri;
+ 		akerhasco -> hzekri [style = "dashed"];
  		jwacquet ->  rponche [style = "dashed"];
+ 		pcasimiri -> lbusiere [style = "dashed"];
  		tess -> hzekri [penwidth=2 color = "invis"];
 	}
 	subgraph cluster_promos {
