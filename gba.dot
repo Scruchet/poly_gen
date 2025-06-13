@@ -476,10 +476,10 @@ digraph gba {
     laurepeno -> mathildedav;
     leaduquen -> paulinelam;
     leanacast -> jeanbaptiste;
-    leofalie -> lisatac;
+    leofalie -> lisatac [penwidth=2 color = "#f05050"];
     lothairegod -> justinerobi;
     louannaheb -> antoninvau;
-    louannaheb -> evamout;
+    louannaheb -> evamout [penwidth=2 color = "#f05050"];
     louanneferrei -> audreyrust;
     loucahac -> louisecorm;
     luanepieau -> leapatta;
@@ -548,7 +548,7 @@ digraph gba {
 	trystanmar	-> tcarton;
 	antoninvau 	-> amaury;
 	lucaslaur 	-> ekaag;
-	chloephil	-> ngonzalez;
+	chloephil	-> ngonzalez [penwidth=2 color = "#f05050"];
 	lisatac		-> mtrobo;
 	evamout		-> edurand;
 	emelinebal	-> cbellanger;

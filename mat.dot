@@ -410,7 +410,7 @@ digraph mat {
             lschisler	[label = "SCHISLER\nLukas"];
 		}
 		
-		remidilli -> cleomesuet;
+		remidilli -> cleomesuet [penwidth=2 color = "#f05050"];
 		camillebec -> camillebia;
 		arthurgarr -> julielomb;
 		arthurgarr -> olivierch;
@@ -451,7 +451,7 @@ digraph mat {
 			epierron	[label = "PIERRON\nEytan"];
 		}
 		tlecoeuvre  -> jthierion;
-		cleomesuet	-> hmorel;
+		cleomesuet	-> hmorel [penwidth=2 color = "#f05050"];
 		cleomesuet	-> jbrejot;
 		julielomb	-> nlemoine;
 		julielomb	-> sduchesne;
@@ -483,7 +483,7 @@ digraph mat {
 		ndebsi		-> ggispert;
 		lschisler	-> leabreger;
 		loanrivere	-> leabreger;
-		cleomesuet	-> leabreger;
+		cleomesuet	-> leabreger [penwidth=2 color = "#f05050"];
 		ngriveau	-> leabreger;
 		olivierch	-> leabreger;
 		camillebia	-> leabreger;
@@ -502,7 +502,7 @@ digraph mat {
 		}
 			sduchesne->smuther;
 			qberthod->agengembre;
-			hmorel->arondeau;
+			hmorel->arondeau [penwidth=2 color = "#f05050"];
 			cfraysse->lcapra;
 			jlemerle->htrouillard;
 			opellaumail->sboukal;

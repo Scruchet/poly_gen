@@ -484,15 +484,20 @@ digraph meca {
 			romainhoz -> bklein;
 			clovischar -> qsousa;
 			louannot -> lhanotel;
+<<<<<<< HEAD
 			ornellaan -> trobin;
 			mdevos -> maelb;
+=======
+			ornellaan -> trobin [penwidth=2 color = "#f05050"];
+			mdevos->maelb;
+>>>>>>> origin/main
 			guilhemdbn->adebas;
 			clementchw->mkernec;
-			arthurdvl->lsabin;
+			arthurdvl->lsabin [penwidth=2 color = "#f05050"];
 			emilemaur->mfabie;
 			emilemaur->lthomas;
 			claracarp->efakhoury;
-			aubinvairel->efakhoury;
+			aubinvairel->efakhoury [penwidth=2 color = "#f05050"];
 			guilhemdbn->efakhoury;
 			louannot->lhanotel;
 			mathildeva->mbretillon;
@@ -535,13 +540,13 @@ digraph meca {
 			mbretillon -> echampig;
 			quentindec -> vvampoui;
 			fbonte -> eamara;
-			efakhoury -> breynaud;
+			efakhoury -> breynaud [penwidth=2 color = "#f05050"];
 			mduclay -> breynaud;
 			granou -> fmayet;
-			adebas -> atalon;
+			adebas -> atalon [penwidth=2 color = "#f05050"];
 			pvermeer -> nliadouze;
 			maelb -> rmarchan;
-			lsabin -> gdelanoe;
+			lsabin -> gdelanoe [penwidth=2 color = "#f05050"];
 			qsousa -> lducoura;
 			adebas2 -> atalon;
 			}

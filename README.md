@@ -1,5 +1,5 @@
 # 🦊️ Polygénéalogie 🌳️  
-Bienvenue aux polytechLillois, voici Polygénéalogie, un outil développé par Simon Cruchet et entretenu d'année en année par les Systèmes Embarqués (qui vont sûrement changer de nom encore une fois).  
+Bienvenue aux polytechLillois, voici Polygénéalogie, un outil développé par les étudiants de Polytech'Lille et entretenu d'année en année par les Systèmes Embarqués (qui vont sûrement changer de nom encore une fois).  
 
 Polygénéalogie vous permet d'ajouter des étudiants et de pouvoir générer une image de l'arbre généalogique des filières de Polytech'Lille.
 
