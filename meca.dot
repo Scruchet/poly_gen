@@ -460,8 +460,8 @@ digraph meca {
 			efakhoury	[label = <FAKHOURY<BR/>Eliott<BR/><I>Président</I>> fillcolor="#f05050" penwidth=4 color="green"];
 			lhanotel	[label = "HANOTEL\nLéa"];
 			mbretillon	[label = "BRETILLON\nMathilde"];
-			lleblanc		[label = "LEBLANC\nLucas"];
-			trobin		[label = <ROBIN<BR/>Tristan<BR/><I>Trésorier</I>> fillcolor="#f05050" penwidth=4 color="purple"];
+			lleblanc	[label = "LEBLANC\nLucas"];
+			trobin		[label = <ROBIN<BR/>Tristan<BR/>> penwidth=4 color="purple"];
 			jfavereaux	[label =	<FAVEREAUX<BR/>Jules<BR/><I>Sono</I>> fillcolor="yellow"];
 			ldelaby		[label = "DELABY\nLéonie"];
 			loris		[label = "\nLoris"];
@@ -485,7 +485,7 @@ digraph meca {
 			clovischar -> qsousa;
 			louannot -> lhanotel;
 			ornellaan -> trobin;
-			mdevos->maelb;
+			mdevos -> maelb;
 			guilhemdbn->adebas;
 			clementchw->mkernec;
 			arthurdvl->lsabin;
